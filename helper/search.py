@@ -1,125 +1,62 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# =============================================================================
-# Created By  : Linux Assistant team
-# Created Date: Mon Jan 19 18:54:00 PDT 2019
-# =============================================================================
-"""this module provide a class called 'search' that can be used under Linux platform
-   to search for a file/dir through the system
-"""
-# =============================================================================
-# Imports
-# =============================================================================
+from os.path import normpath , join , isfile , isdir;
+from re import escape;
+from subprocess import Popen , PIPE;
+ 
 
-from os.path import exists , join;
-from subprocess import Popen, PIPE
-from shlex import split;
-from threading import Thread , Event;
+def append(target="" , folder=None) :
+	# if folder != None : return "'*/" + escape(normpath(join(folder, target))) + "'";
+	# else : return "'*/" + escape(normpath(target)) + "'";
 
-
-class search :
-	"""this class provide a tool to search for a file/dir starting from a given dir if found"""
-
-	def __init__(self,name="",dirName=None,password="") :
-		""" 
-		name -> str , dirName -> str , password -> str
-
-		'name' is the name of file/dir that need to be searched , 'dirName' is the dir
-		from which the searching will start, if it is None(default) then the searching will start
-		from the root folder, password is the current user password, if it is not correct an empty
-		list will be the result usually  
-
-		"""
-		
-		self.name = name;
-		self.dirName = dirName;
-		self.password = password;
-		self.event = Event();
-		self.countThreadsLives = 0;
-		self.result = [];
-
-	def runCommand(self,command) :
-		"""
-		'command' -> str 
-		run 'find' command in an optimized way
-
-		"""
-		command = split(command)
-		#split the command based on spaces, and pass it to be executed 
-		p = Popen(['sudo', '-S'] + command, stdout=PIPE, stdin=PIPE, stderr=PIPE, universal_newlines=True)
-		#communicate with the buffer to pass the password
-		result = p.communicate(self.password + '\n')[0]
-		result = result.split("\n")
-		try : result.remove("") #remove any empty results if found
-		except : pass; 
-		#append the returned result to result
-		self.result += result;
-		self.countThreadsLives += 1;
-		print(self.countThreadsLives)
-		#this function will be executed twice at the same time, but we also need the total
-		#result, so we don't return the result unless we are sure that it is executed two times
-		#so if it reached '2', then we release the lock at 'parallel' function
-		if self.countThreadsLives == 2 : self.event.set();
+	if folder != None :
+		s = normpath("/" + normpath(join(folder, target)))
+		if len(s) > 1 and s[0] == s[1] == "/" : return "'*" + escape(s[1:]) + "'";
+		else : return "'*" + escape(s) + "'"; 
+	else : 
+		s = normpath("/" + normpath(target));
+		if len(s) > 1 and s[0] == s[1] == "/" : return "'*" + escape(s[1:]) + "'";
+		else : return "'*" + escape(s) + "'";
 
 
-	def parallel(self,*funcs) :
-		if len(funcs) == 0 : return;
 
-		def startThread(func) :
-			"this function start a new thread"
-			thread = Thread(target=func,args=());
-			thread.setDaemon(True);
-			thread.start();
+def run(command , password=None) :
+	if password != None :
+		command = command.replace("sudo","echo {0} | sudo -S ".format(password))
+	result = Popen(command , shell = True,stdout=PIPE,stderr=PIPE,stdin=PIPE)
+	output , err = result.communicate()	
+	#if result.returncode != 0 : raise ValueError("the query <{0}> can't work correctly".format(command))
+	return output
 
-		event = Event();
-		for i in range(len(funcs)) :
-			if i == len(funcs) - 1 :
-				startThread(funcs[i]);
-			else : startThread(funcs[i]);
-		self.event.wait(); #prevent the next line to be reached unless it will be released
-		return
+def updateDb(password=None) :
+	run("sudo updatedb" , password);
 
 
-	def search(self) :
-		"""this function start searching for the given file/dir"""
-		if self.dirName == None :	#if dirName is None, then the searching will start from root folder
-			if self.name.replace(" ","") != "" :
-				path = self.name.split("/");
-				path = [c for c in path if c != ""]; #split the name to be searched based on '/' 
-				if path == [] : return [];
-				pathes = [];
-				#if the path of 'name' is only one name, then it may be file or dir
-				#then we will search as it is a file or a dir at the same time 
-				if len(path) == 1 : self.parallel(lambda : self.runCommand(("find -O3 / -type f -iname '"+path[0]+"'")) , lambda :  self.runCommand(("find -O3 / -type d -iname '"+path[0]+"'")));return self.result;
-				else :
-					#if it consists of more than one name, then it must be in form of: dir/dir/...file
-					#self.parallel(self.runCommand(("find / -type f -iname '"+path[0]+"'")) , self.runCommand(("find / -type d -iname '"+path[0]+"'")))
-					#so we will search for the first dir, then append each one from the result to what is
-					#remained from the 'name', and consider each one is from the result if it exists
-					pathes = [];
-					self.runCommand(("find -O3 / -type d -iname '"+path[0]+"'"))
-					for path_ in self.result :
-						temp = join(path_,'/'.join(path[1:]));
-						if exists(temp) : pathes.append(temp);
-					return pathes;
-			else :
-				return [];
-		elif self.dirName.replace(" ","") != "" :	#if 'dirName' is not None
-			path = self.dirName.split("/");
-			path = [c for c in path if c != ""];
-			if path == [] : return [];
-			pathes = [];
-			#search for the first dir of the 'dirName', then append each result with what is remained 
-			#from the 'dirName' also append each with the 'name'
-			#and consider each one is from the result if it exists 
-			self.runCommand(("find / -type d -iname '"+path[0]+"'"))
-			for path_ in self.result :
-				temp = join(join(path_,'/'.join(path[1:])) , self.name);
-				if exists(temp) : pathes.append(temp);
-			return pathes;
+def lsearch(target="" , folder=None , _type="f" , password=None) :
+	def detectType(s) :
+		if _type == "f" : c = isfile;
+		else : c = isdir;
+		if s == [] : return [];
+		return [i for i in s if c(i)];
+
+	link = append(target , folder);
+	print(link)
+	return detectType(run("locate -i {0}".format(link) , password=password).decode("utf-8").split("\n")[:-1]);
+
+
+def fsearch(target="" , folder=None , _type="f" , password=None) :
+	link = append(target , folder);
+	print(link)
+	return run("sudo find / -type {0} -ipath {1}".format(_type,link) , password=password).decode("utf-8").split("\n")[:-1];
 
 
 
 
 
-print(search(name="search.py",dirName="project",password="jesus").search());
+#run("sudo find / -ipath '/'" , "jesus");
+#print(append("games","grep/"))
+# print(lsearch(target="search.py" , _type="f" , folder="//"))
+# print(fsearch(target="searching",folder="/",_type="d",password="jesus"));
+# updateDb("jesus")
+#print(str(Path("grep").resolve()))
+#print(normpath("//d/d"))
+
+
