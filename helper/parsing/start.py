@@ -41,7 +41,7 @@ def anaModelLoad() :
 	return nlp;
 
 #load collocation model	
-COLMODEL = colModelLoad("models.sav");
+COLMODEL = colModelLoad("../../model/collocationDetectorModel.sav");
 print(COLMODEL)
 #load anaphora resolution model
 #ANAMODEL = anaModelLoad();
