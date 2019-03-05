@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dic>
+    <category type="list">
+        <word>register</word>
+        <word>detail</word>
+        <word>spell out</word>
+        <word>note</word>
+        <word>place</word>
+        <word>classify</word>
+        <word>file</word>
+        <word>enter</word>
+        <word>post</word>
+        <word>specify</word>
+        <word>invoice</word>
+        <word>tab</word>
+        <word>enumerate</word>
+        <word>poll</word>
+        <word>numerate</word>
+        <word>index</word>
+        <word>particularize</word>
+        <word>itemize</word>
+        <word>catalogue</word>
+        <word>book</word>
+        <word>inventory</word>
+        <word>peg</word>
+        <word>schedule</word>
+        <word>tally</word>
+        <word>chart</word>
+        <word>inscribe</word>
+        <word>arrange</word>
+        <word>insert</word>
+        <word>enroll</word>
+        <word>census</word>
+        <word>chronicle</word>
+        <word>bill</word>
+        <word>manifest</word>
+        <word>record</word>
+        <word>specialize</word>
+        <word>docket</word>
+        <word>run down</word>
+        <word>calender</word>
+        <word>button down</word>
+        <word>keep count</word>
+        <word>put down as</word>
+        <word>put down for</word>
+        <word>set down</word>
+        <word>tick off</word>
+        <word>write down</word>
+        <word>slope</word>
+        <word>incline</word>
+        <word>tilt</word>
+        <word>recline</word>
+        <word>tip</word>
+        <word>cant</word>
+        <word>careen</word>
+        <word>pitch</word>
+        <word>heel</word>
+    </category>
+    <category type="delete">
+        <word>annul</word>
+        <word>black out</word>
+        <word>cross out</word>
+        <word>cut out</word>
+        <word>destroy</word>
+        <word>edit</word>
+        <word>eliminate</word>
+        <word>exclude</word>
+        <word>expunge</word>
+        <word>omit</word>
+        <word>wipe out</word>
+        <word>bleep</word>
+        <word>blue pencil</word>
+        <word>cancel</word>
+        <word>clean</word>
+        <word>cut</word>
+        <word>decontaminate</word>
+        <word>drop</word>
+        <word>efface</word>
+        <word>obliterate</word>
+        <word>rub</word>
+        <word>sanitize</word>
+        <word>snip</word>
+        <word>squash</word>
+        <word>squelch</word>
+        <word>sterilize</word>
+        <word>trim</word>
+        <word>X out</word>
+        <word>blot out</word>
+        <word>clean up</word>
+        <word>pass up</word>
+        <word>rub out</word>
+        <word>rule out</word>
+        <word>strike out</word>
+    </category>
+    <category type="move">
+        <word>propel</word>
+        <word>migrate</word>
+        <word>walk</word>
+        <word>jump</word>
+        <word>go</word>
+        <word>carry</word>
+        <word>ship</word>
+        <word>transport</word>
+        <word>blow</word>
+        <word>proceed</word>
+        <word>transfer</word>
+        <word>travel</word>
+        <word>cross</word>
+        <word>relocate</word>
+        <word>run</word>
+        <word>drift</word>
+        <word>progress</word>
+        <word>change</word>
+        <word>fly</word>
+        <word>advance</word>
+        <word>shift</word>
+        <word>flow</word>
+        <word>drive</word>
+        <word>remove</word>
+        <word>leave</word>
+        <word>switch</word>
+        <word>withdraw</word>
+        <word>push</word>
+        <word>climb</word>
+        <word>traverse</word>
+        <word>depart</word>
+        <word>actuate</word>
+        <word>quit</word>
+        <word>glide</word>
+        <word>leap</word>
+        <word>exit</word>
+        <word>split</word>
+        <word>scram</word>
+        <word>stir</word>
+        <word>roll</word>
+        <word>march</word>
+        <word>transpose</word>
+        <word>bustle</word>
+        <word>hurry</word>
+        <word>crawl</word>
+        <word>disturb</word>
+        <word>shove</word>
+        <word>impel</word>
+        <word>budge</word>
+        <word>position</word>
+        <word>dislocate</word>
+        <word>get off</word>
+        <word>pull out</word>
+        <word>take off</word>
+        <word>locomote</word>
+        <word>get away</word>
+        <word>get going</word>
+        <word>go away</word>
+        <word>head for</word>
+        <word>off load</word>
+        <word>skip out</word>
+        <word>convert</word>
+        <word>propel</word>
+        <word>lead</word>
+        <word>bring</word>
+        <word>shift</word>
+        <word>drive</word>
+        <word>carry</word>
+        <word>turn</word>
+        <word>push</word>
+        <word>operate</word>
+        <word>start</word>
+        <word>activate</word>
+        <word>prompt</word>
+        <word>inspire</word>
+        <word>actuate</word>
+        <word>agitate</word>
+        <word>persuade</word>
+        <word>touch</word>
+        <word>quicken</word>
+        <word>impel</word>
+        <word>suggest</word>
+        <word>incite</word>
+        <word>submit</word>
+        <word>recommend</word>
+        <word>impress</word>
+        <word>sway</word>
+        <word>instigate</word>
+        <word>urge</word>
+        <word>propose</word>
+        <word>advocate</word>
+        <word>excite</word>
+        <word>introduce</word>
+        <word>strike</word>
+        <word>induce</word>
+        <word>inspirit</word>
+        <word>affect</word>
+        <word>rouse</word>
+        <word>cause</word>
+        <word>shove</word>
+        <word>stir</word>
+        <word>budge</word>
+        <word>stimulate</word>
+        <word>bring up</word>
+        <word>draw up</word>
+        <word>get going</word>
+        <word>give rise to</word>
+        <word>play on</word>
+        <word>prevail upon</word>
+        <word>put forward</word>
+        <word>tug at</word>
+        <word>work on</word>
+    </category>
+    <category type="copy">
+        <word>plagiarize</word>
+        <word>transcribe</word>
+        <word>rewrite</word>
+        <word>imitate</word>
+        <word>photocopy</word>
+        <word>reproduce</word>
+        <word>paint</word>
+        <word>repeat</word>
+        <word>replicate</word>
+        <word>simulate</word>
+        <word>represent</word>
+        <word>sketch</word>
+        <word>manifold</word>
+        <word>mirror</word>
+        <word>dupe</word>
+        <word>limn</word>
+        <word>fake</word>
+        <word>mold</word>
+        <word>counterfeit</word>
+        <word>portray</word>
+        <word>depict</word>
+        <word>engrave</word>
+        <word>forge</word>
+        <word>paraphrase</word>
+        <word>picture</word>
+        <word>draw</word>
+        <word>trace</word>
+        <word>clone</word>
+        <word>Xerox</word>
+        <word>reflect</word>
+        <word>carbon</word>
+        <word>cartoon</word>
+        <word>delineate</word>
+        <word>ditto</word>
+        <word>engross</word>
+        <word>sculpture</word>
+        <word>knock off</word>
+        <word>mimeo</word>
+        <word>reduplicate</word>
+        <word>Photostat</word>
+        <word>stat</word>
+        <word>repeat</word>
+        <word>emulate</word>
+        <word>mimic</word>
+        <word>simulate</word>
+        <word>steal</word>
+        <word>pirate</word>
+        <word>illustrate</word>
+        <word>echo</word>
+        <word>do</word>
+        <word>incarnate</word>
+        <word>prefigure</word>
+        <word>personify</word>
+        <word>parrot</word>
+        <word>typify</word>
+        <word>mirror</word>
+        <word>phony</word>
+        <word>epitomize</word>
+        <word>ape</word>
+        <word>burlesque</word>
+        <word>travesty</word>
+        <word>fake</word>
+        <word>embody</word>
+        <word>follow</word>
+        <word>model</word>
+        <word>parody</word>
+        <word>mock</word>
+        <word>sham</word>
+        <word>knock off</word>
+        <word>take off</word>
+        <word>follow suit</word>
+        <word>act like</word>
+        <word>do a take off</word>
+        <word>do like</word>
+        <word>follow example</word>
+        <word>go like</word>
+        <word>make like</word>
+        <word>play a role</word>
+        <word>take leaf out of book</word>
+    </category>
+    <category type="inside">
+        <word>indoors</word>
+        <word>central</word>
+        <word>inner</word>
+        <word>innermost</word>
+        <word>internal</word>
+        <word>intramural</word>
+        <word>inward</word>
+        <word>surrounded</word>
+        <word>under a roof</word>
+        <word>limited</word>
+        <word>classified</word>
+        <word>closet</word>
+        <word>private</word>
+        <word>exclusive</word>
+        <word>confidential</word>
+        <word>esoteric</word>
+        <word>internal</word>
+        <word>restricted</word>
+        <word>hushed</word>
+        <word>indoors</word>
+        <word>under a roof</word>
+        <word>under cover</word>
+        <word>within doors</word>
+        <word>within walls</word>
+        <word>interior</word>
+        <word>innards</word>
+        <word>heart</word>
+        <word>stuffing</word>
+        <word>recess</word>
+        <word>center</word>
+        <word>soul</word>
+        <word>belly</word>
+        <word>gut</word>
+        <word>bowels</word>
+        <word>contents</word>
+        <word>breast</word>
+        <word>womb</word>
+        <word>inner portion</word>
+    </category>
+    <category type="become">
+        <word>come</word>
+        <word>develop into</word>
+        <word>grow into</word>
+        <word>turn into</word>
+        <word>convert</word>
+        <word>incline</word>
+        <word>mature</word>
+        <word>metamorphose</word>
+        <word>shift</word>
+        <word>wax</word>
+        <word>alter to</word>
+        <word>assume form of</word>
+        <word>be converted to</word>
+        <word>be reduced to</word>
+        <word>be reformed</word>
+        <word>be remodeled</word>
+        <word>be transformed into</word>
+        <word>change into</word>
+        <word>come to be</word>
+        <word>emerge as</word>
+        <word>eventually be</word>
+        <word>pass into</word>
+        <word>ripen into</word>
+        <word>turn out</word>
+        <word>accord</word>
+        <word>augment</word>
+        <word>fit</word>
+        <word>display</word>
+        <word>flatter</word>
+        <word>enrich</word>
+        <word>ornament</word>
+        <word>embellish</word>
+        <word>agree</word>
+        <word>suit</word>
+        <word>harmonize</word>
+        <word>garnish</word>
+        <word>heighten</word>
+        <word>grace</word>
+        <word>match</word>
+        <word>adorn</word>
+        <word>belong to</word>
+        <word>be appropriate</word>
+        <word>go together</word>
+        <word>go with</word>
+        <word>make handsome</word>
+        <word>set off</word>
+    </category>
+</dic>
