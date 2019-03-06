@@ -51,3 +51,12 @@ def fsearch(target="" , folder=None , _type="f" , password=None) :
 
 
 
+#run("sudo find / -ipath '/'" , "jesus");
+#print(append("games","grep/"))
+# print(lsearch(target="search.py" , _type="f" , folder="//"))
+# print(fsearch(target="searching",folder="/",_type="d",password="jesus"));
+# updateDb("jesus")
+#print(str(Path("grep").resolve()))
+#print(normpath("//d/d"))
+
+

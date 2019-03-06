@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =============================================================================
-# Created By  : Linux Assistant team
+# Created By  : Kirollos Nasr
 # Created Date: Mon Jan 20 06:50:00 PDT 2019
 # =============================================================================
 """
 this module provide 'find' class to analyse user query and execute the corresponding linux command
 the commands will be related to file/dir manipulations on Linux platform
 """
-
 from intro import App;
 from time import sleep;
 
