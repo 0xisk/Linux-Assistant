@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =============================================================================
-# Created By  : Linux Assistant team
+# Created By  : Kirollos Nasr Elias
 # Created Date: Mon Jan 20 18:54:00 PDT 2019
 # =============================================================================
 """this module provide App class, that is used to show a loading screen while loading the program
@@ -9,13 +9,11 @@
 # =============================================================================
 # Imports
 # =============================================================================
-
 from time import sleep
 from tkinter import Tk , Label
 from threading import Thread
 
 class App(Thread):
-
     def __init__(self):
         Thread.__init__(self)
         self.start()

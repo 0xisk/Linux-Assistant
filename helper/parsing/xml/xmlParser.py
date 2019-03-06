@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =============================================================================
-# Created By  : Linux Assistant team
-# Created Date: Mon Jan 21 01:22:00 PDT 2019
+# Created By  : Kirollos Nasr Elias
+# Created Date: Mon Feb 26 01:22:00 PDT 2019
 # =============================================================================
 """
 this module provide xmlParser class that can be used to buid or append an existing 
@@ -12,7 +12,6 @@ the root node, and each will have many words elements
 # =============================================================================
 # Imports
 # =============================================================================
-
 from xml.etree.ElementTree import parse , Element;
 from os.path import isfile;
 from vkbeautify import xml;
@@ -21,8 +20,7 @@ from datetime import datetime;
 class xmlParser :
 	"""xmlParser class used to build/append a xml file for an existed one"""
 	def __init__(self,path) :
-		""" path -> str
-			'path' is the path of the xml file to be built/appended
+		""" 'path' should be string that represents a xml file path to be updated
 		"""
 		self.root = None;
 		if isfile(path) :
@@ -32,7 +30,7 @@ class xmlParser :
 
 
 	def _getCategory(self,name) :
-		"""return the node that is the category named 'name'"""
+		"""'name' string represent the name of a category to be returned"""
 		for cat in self.root :
 			if cat.attrib["type"] == name :
 				return cat;				
@@ -47,7 +45,7 @@ class xmlParser :
 			return names #return set of all words in category 'category'
 
 	def appendWord(self,category,value) :
-		"append a word with name 'value' in a category named 'category'"
+		"""'value' is string represent a word to be added in 'category' category"""
 		cat = self._getCategory(category);
 		if cat != None :
 			#create an element with name word
@@ -75,7 +73,7 @@ class xmlParser :
 
 
 	def formateFile(self) :
-		"create a xml file as a well formatted version of the opened xml file of name is the current date"
+		"""formate the working xml file in a new xml file named the current date"""
 		xml(self.path,str(datetime.now().time())+".xml");
 
 
