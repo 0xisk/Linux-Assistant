@@ -383,3 +383,723 @@ i would like to drop this file,rm
 please drop this file,rm
 excuse me drop this file,rm
 can i drop this file please,rm
+remove directory,rm -r
+remove folder,rm -r
+remove specified directory,rm -r
+remove specified folder,rm -r
+remove pocket,rm -r
+delete directory,rm -r
+delete folder,rm -r
+delete specified directory,rm -r
+delete specified folder,rm -r
+delete pocket,rm -r
+clear away directory,rm -r
+clear away folder,rm -r
+clear away specified directory,rm -r
+clear away specified folder,rm -r
+clear away pocket,rm -r
+discard directory,rm -r
+discard folder,rm -r
+discard specified directory,rm -r
+discard specified folder,rm -r
+discard pocket,rm -r
+discharge directory,rm -r
+discharge folder,rm -r
+discharge specified directory,rm -r
+discharge specified folder,rm -r
+discharge pocket,rm -r
+dismiss directory,rm -r
+dismiss folder,rm -r
+dismiss specified directory,rm -r
+dismiss specified folder,rm -r
+dismiss pocket,rm -r
+eliminate directory,rm -r
+eliminate folder,rm -r
+eliminate specified directory,rm -r
+eliminate specified folder,rm -r
+eliminate pocket,rm -r
+erase directory,rm -r
+erase folder,rm -r
+erase specified directory,rm -r
+erase specified folder,rm -r
+erase pocket,rm -r
+evacuate directory,rm -r
+evacuate folder,rm -r
+evacuate specified directory,rm -r
+evacuate specified folder,rm -r
+evacuate pocket,rm -r
+expel directory,rm -r
+expel folder,rm -r
+expel specified directory,rm -r
+expel specified folder,rm -r
+expel pocket,rm -r
+extract directory,rm -r
+extract folder,rm -r
+extract specified directory,rm -r
+extract specified folder,rm -r
+extract pocket,rm -r
+get rid of directory,rm -r
+get rid of folder,rm -r
+get rid of specified directory,rm -r
+get rid of specified folder,rm -r
+get rid of pocket,rm -r
+oust directory,rm -r
+oust folder,rm -r
+oust specified directory,rm -r
+oust specified folder,rm -r
+oust pocket,rm -r
+destroy directory,rm -r
+destroy folder,rm -r
+destroy specified directory,rm -r
+destroy specified folder,rm -r
+destroy pocket,rm -r
+clean directory,rm -r
+clean folder,rm -r
+clean specified directory,rm -r
+clean specified folder,rm -r
+clean pocket,rm -r
+drop directory,rm -r
+drop folder,rm -r
+drop specified directory,rm -r
+drop specified folder,rm -r
+drop pocket,rm -r
+i want to remove this directory,rm -r
+i need to remove this directory,rm -r
+i wish remove this directory,rm -r
+i wish to remove this directory,rm -r
+i would like to remove this directory,rm -r
+please remove this directory,rm -r
+excuse me remove this directory,rm -r
+can i remove this directory please,rm -r
+i want to remove this folder,rm -r
+i need to remove this folder,rm -r
+i wish remove this folder,rm -r
+i wish to remove this folder,rm -r
+i would like to remove this folder,rm -r
+please remove this folder,rm -r
+excuse me remove this folder,rm -r
+can i remove this folder please,rm -r
+i want to remove this specified directory,rm -r
+i need to remove this specified directory,rm -r
+i wish remove this specified directory,rm -r
+i wish to remove this specified directory,rm -r
+i would like to remove this specified directory,rm -r
+please remove this specified directory,rm -r
+excuse me remove this specified directory,rm -r
+can i remove this specified directory please,rm -r
+i want to remove this specified folder,rm -r
+i need to remove this specified folder,rm -r
+i wish remove this specified folder,rm -r
+i wish to remove this specified folder,rm -r
+i would like to remove this specified folder,rm -r
+please remove this specified folder,rm -r
+excuse me remove this specified folder,rm -r
+can i remove this specified folder please,rm -r
+i want to remove this pocket,rm -r
+i need to remove this pocket,rm -r
+i wish remove this pocket,rm -r
+i wish to remove this pocket,rm -r
+i would like to remove this pocket,rm -r
+please remove this pocket,rm -r
+excuse me remove this pocket,rm -r
+can i remove this pocket please,rm -r
+i want to delete this directory,rm -r
+i need to delete this directory,rm -r
+i wish delete this directory,rm -r
+i wish to delete this directory,rm -r
+i would like to delete this directory,rm -r
+please delete this directory,rm -r
+excuse me delete this directory,rm -r
+can i delete this directory please,rm -r
+i want to delete this folder,rm -r
+i need to delete this folder,rm -r
+i wish delete this folder,rm -r
+i wish to delete this folder,rm -r
+i would like to delete this folder,rm -r
+please delete this folder,rm -r
+excuse me delete this folder,rm -r
+can i delete this folder please,rm -r
+i want to delete this specified directory,rm -r
+i need to delete this specified directory,rm -r
+i wish delete this specified directory,rm -r
+i wish to delete this specified directory,rm -r
+i would like to delete this specified directory,rm -r
+please delete this specified directory,rm -r
+excuse me delete this specified directory,rm -r
+can i delete this specified directory please,rm -r
+i want to delete this specified folder,rm -r
+i need to delete this specified folder,rm -r
+i wish delete this specified folder,rm -r
+i wish to delete this specified folder,rm -r
+i would like to delete this specified folder,rm -r
+please delete this specified folder,rm -r
+excuse me delete this specified folder,rm -r
+can i delete this specified folder please,rm -r
+i want to delete this pocket,rm -r
+i need to delete this pocket,rm -r
+i wish delete this pocket,rm -r
+i wish to delete this pocket,rm -r
+i would like to delete this pocket,rm -r
+please delete this pocket,rm -r
+excuse me delete this pocket,rm -r
+can i delete this pocket please,rm -r
+i want to clear away this directory,rm -r
+i need to clear away this directory,rm -r
+i wish clear away this directory,rm -r
+i wish to clear away this directory,rm -r
+i would like to clear away this directory,rm -r
+please clear away this directory,rm -r
+excuse me clear away this directory,rm -r
+can i clear away this directory please,rm -r
+i want to clear away this folder,rm -r
+i need to clear away this folder,rm -r
+i wish clear away this folder,rm -r
+i wish to clear away this folder,rm -r
+i would like to clear away this folder,rm -r
+please clear away this folder,rm -r
+excuse me clear away this folder,rm -r
+can i clear away this folder please,rm -r
+i want to clear away this specified directory,rm -r
+i need to clear away this specified directory,rm -r
+i wish clear away this specified directory,rm -r
+i wish to clear away this specified directory,rm -r
+i would like to clear away this specified directory,rm -r
+please clear away this specified directory,rm -r
+excuse me clear away this specified directory,rm -r
+can i clear away this specified directory please,rm -r
+i want to clear away this specified folder,rm -r
+i need to clear away this specified folder,rm -r
+i wish clear away this specified folder,rm -r
+i wish to clear away this specified folder,rm -r
+i would like to clear away this specified folder,rm -r
+please clear away this specified folder,rm -r
+excuse me clear away this specified folder,rm -r
+can i clear away this specified folder please,rm -r
+i want to clear away this pocket,rm -r
+i need to clear away this pocket,rm -r
+i wish clear away this pocket,rm -r
+i wish to clear away this pocket,rm -r
+i would like to clear away this pocket,rm -r
+please clear away this pocket,rm -r
+excuse me clear away this pocket,rm -r
+can i clear away this pocket please,rm -r
+i want to discard this directory,rm -r
+i need to discard this directory,rm -r
+i wish discard this directory,rm -r
+i wish to discard this directory,rm -r
+i would like to discard this directory,rm -r
+please discard this directory,rm -r
+excuse me discard this directory,rm -r
+can i discard this directory please,rm -r
+i want to discard this folder,rm -r
+i need to discard this folder,rm -r
+i wish discard this folder,rm -r
+i wish to discard this folder,rm -r
+i would like to discard this folder,rm -r
+please discard this folder,rm -r
+excuse me discard this folder,rm -r
+can i discard this folder please,rm -r
+i want to discard this specified directory,rm -r
+i need to discard this specified directory,rm -r
+i wish discard this specified directory,rm -r
+i wish to discard this specified directory,rm -r
+i would like to discard this specified directory,rm -r
+please discard this specified directory,rm -r
+excuse me discard this specified directory,rm -r
+can i discard this specified directory please,rm -r
+i want to discard this specified folder,rm -r
+i need to discard this specified folder,rm -r
+i wish discard this specified folder,rm -r
+i wish to discard this specified folder,rm -r
+i would like to discard this specified folder,rm -r
+please discard this specified folder,rm -r
+excuse me discard this specified folder,rm -r
+can i discard this specified folder please,rm -r
+i want to discard this pocket,rm -r
+i need to discard this pocket,rm -r
+i wish discard this pocket,rm -r
+i wish to discard this pocket,rm -r
+i would like to discard this pocket,rm -r
+please discard this pocket,rm -r
+excuse me discard this pocket,rm -r
+can i discard this pocket please,rm -r
+i want to discharge this directory,rm -r
+i need to discharge this directory,rm -r
+i wish discharge this directory,rm -r
+i wish to discharge this directory,rm -r
+i would like to discharge this directory,rm -r
+please discharge this directory,rm -r
+excuse me discharge this directory,rm -r
+can i discharge this directory please,rm -r
+i want to discharge this folder,rm -r
+i need to discharge this folder,rm -r
+i wish discharge this folder,rm -r
+i wish to discharge this folder,rm -r
+i would like to discharge this folder,rm -r
+please discharge this folder,rm -r
+excuse me discharge this folder,rm -r
+can i discharge this folder please,rm -r
+i want to discharge this specified directory,rm -r
+i need to discharge this specified directory,rm -r
+i wish discharge this specified directory,rm -r
+i wish to discharge this specified directory,rm -r
+i would like to discharge this specified directory,rm -r
+please discharge this specified directory,rm -r
+excuse me discharge this specified directory,rm -r
+can i discharge this specified directory please,rm -r
+i want to discharge this specified folder,rm -r
+i need to discharge this specified folder,rm -r
+i wish discharge this specified folder,rm -r
+i wish to discharge this specified folder,rm -r
+i would like to discharge this specified folder,rm -r
+please discharge this specified folder,rm -r
+excuse me discharge this specified folder,rm -r
+can i discharge this specified folder please,rm -r
+i want to discharge this pocket,rm -r
+i need to discharge this pocket,rm -r
+i wish discharge this pocket,rm -r
+i wish to discharge this pocket,rm -r
+i would like to discharge this pocket,rm -r
+please discharge this pocket,rm -r
+excuse me discharge this pocket,rm -r
+can i discharge this pocket please,rm -r
+i want to dismiss this directory,rm -r
+i need to dismiss this directory,rm -r
+i wish dismiss this directory,rm -r
+i wish to dismiss this directory,rm -r
+i would like to dismiss this directory,rm -r
+please dismiss this directory,rm -r
+excuse me dismiss this directory,rm -r
+can i dismiss this directory please,rm -r
+i want to dismiss this folder,rm -r
+i need to dismiss this folder,rm -r
+i wish dismiss this folder,rm -r
+i wish to dismiss this folder,rm -r
+i would like to dismiss this folder,rm -r
+please dismiss this folder,rm -r
+excuse me dismiss this folder,rm -r
+can i dismiss this folder please,rm -r
+i want to dismiss this specified directory,rm -r
+i need to dismiss this specified directory,rm -r
+i wish dismiss this specified directory,rm -r
+i wish to dismiss this specified directory,rm -r
+i would like to dismiss this specified directory,rm -r
+please dismiss this specified directory,rm -r
+excuse me dismiss this specified directory,rm -r
+can i dismiss this specified directory please,rm -r
+i want to dismiss this specified folder,rm -r
+i need to dismiss this specified folder,rm -r
+i wish dismiss this specified folder,rm -r
+i wish to dismiss this specified folder,rm -r
+i would like to dismiss this specified folder,rm -r
+please dismiss this specified folder,rm -r
+excuse me dismiss this specified folder,rm -r
+can i dismiss this specified folder please,rm -r
+i want to dismiss this pocket,rm -r
+i need to dismiss this pocket,rm -r
+i wish dismiss this pocket,rm -r
+i wish to dismiss this pocket,rm -r
+i would like to dismiss this pocket,rm -r
+please dismiss this pocket,rm -r
+excuse me dismiss this pocket,rm -r
+can i dismiss this pocket please,rm -r
+i want to eliminate this directory,rm -r
+i need to eliminate this directory,rm -r
+i wish eliminate this directory,rm -r
+i wish to eliminate this directory,rm -r
+i would like to eliminate this directory,rm -r
+please eliminate this directory,rm -r
+excuse me eliminate this directory,rm -r
+can i eliminate this directory please,rm -r
+i want to eliminate this folder,rm -r
+i need to eliminate this folder,rm -r
+i wish eliminate this folder,rm -r
+i wish to eliminate this folder,rm -r
+i would like to eliminate this folder,rm -r
+please eliminate this folder,rm -r
+excuse me eliminate this folder,rm -r
+can i eliminate this folder please,rm -r
+i want to eliminate this specified directory,rm -r
+i need to eliminate this specified directory,rm -r
+i wish eliminate this specified directory,rm -r
+i wish to eliminate this specified directory,rm -r
+i would like to eliminate this specified directory,rm -r
+please eliminate this specified directory,rm -r
+excuse me eliminate this specified directory,rm -r
+can i eliminate this specified directory please,rm -r
+i want to eliminate this specified folder,rm -r
+i need to eliminate this specified folder,rm -r
+i wish eliminate this specified folder,rm -r
+i wish to eliminate this specified folder,rm -r
+i would like to eliminate this specified folder,rm -r
+please eliminate this specified folder,rm -r
+excuse me eliminate this specified folder,rm -r
+can i eliminate this specified folder please,rm -r
+i want to eliminate this pocket,rm -r
+i need to eliminate this pocket,rm -r
+i wish eliminate this pocket,rm -r
+i wish to eliminate this pocket,rm -r
+i would like to eliminate this pocket,rm -r
+please eliminate this pocket,rm -r
+excuse me eliminate this pocket,rm -r
+can i eliminate this pocket please,rm -r
+i want to erase this directory,rm -r
+i need to erase this directory,rm -r
+i wish erase this directory,rm -r
+i wish to erase this directory,rm -r
+i would like to erase this directory,rm -r
+please erase this directory,rm -r
+excuse me erase this directory,rm -r
+can i erase this directory please,rm -r
+i want to erase this folder,rm -r
+i need to erase this folder,rm -r
+i wish erase this folder,rm -r
+i wish to erase this folder,rm -r
+i would like to erase this folder,rm -r
+please erase this folder,rm -r
+excuse me erase this folder,rm -r
+can i erase this folder please,rm -r
+i want to erase this specified directory,rm -r
+i need to erase this specified directory,rm -r
+i wish erase this specified directory,rm -r
+i wish to erase this specified directory,rm -r
+i would like to erase this specified directory,rm -r
+please erase this specified directory,rm -r
+excuse me erase this specified directory,rm -r
+can i erase this specified directory please,rm -r
+i want to erase this specified folder,rm -r
+i need to erase this specified folder,rm -r
+i wish erase this specified folder,rm -r
+i wish to erase this specified folder,rm -r
+i would like to erase this specified folder,rm -r
+please erase this specified folder,rm -r
+excuse me erase this specified folder,rm -r
+can i erase this specified folder please,rm -r
+i want to erase this pocket,rm -r
+i need to erase this pocket,rm -r
+i wish erase this pocket,rm -r
+i wish to erase this pocket,rm -r
+i would like to erase this pocket,rm -r
+please erase this pocket,rm -r
+excuse me erase this pocket,rm -r
+can i erase this pocket please,rm -r
+i want to evacuate this directory,rm -r
+i need to evacuate this directory,rm -r
+i wish evacuate this directory,rm -r
+i wish to evacuate this directory,rm -r
+i would like to evacuate this directory,rm -r
+please evacuate this directory,rm -r
+excuse me evacuate this directory,rm -r
+can i evacuate this directory please,rm -r
+i want to evacuate this folder,rm -r
+i need to evacuate this folder,rm -r
+i wish evacuate this folder,rm -r
+i wish to evacuate this folder,rm -r
+i would like to evacuate this folder,rm -r
+please evacuate this folder,rm -r
+excuse me evacuate this folder,rm -r
+can i evacuate this folder please,rm -r
+i want to evacuate this specified directory,rm -r
+i need to evacuate this specified directory,rm -r
+i wish evacuate this specified directory,rm -r
+i wish to evacuate this specified directory,rm -r
+i would like to evacuate this specified directory,rm -r
+please evacuate this specified directory,rm -r
+excuse me evacuate this specified directory,rm -r
+can i evacuate this specified directory please,rm -r
+i want to evacuate this specified folder,rm -r
+i need to evacuate this specified folder,rm -r
+i wish evacuate this specified folder,rm -r
+i wish to evacuate this specified folder,rm -r
+i would like to evacuate this specified folder,rm -r
+please evacuate this specified folder,rm -r
+excuse me evacuate this specified folder,rm -r
+can i evacuate this specified folder please,rm -r
+i want to evacuate this pocket,rm -r
+i need to evacuate this pocket,rm -r
+i wish evacuate this pocket,rm -r
+i wish to evacuate this pocket,rm -r
+i would like to evacuate this pocket,rm -r
+please evacuate this pocket,rm -r
+excuse me evacuate this pocket,rm -r
+can i evacuate this pocket please,rm -r
+i want to expel this directory,rm -r
+i need to expel this directory,rm -r
+i wish expel this directory,rm -r
+i wish to expel this directory,rm -r
+i would like to expel this directory,rm -r
+please expel this directory,rm -r
+excuse me expel this directory,rm -r
+can i expel this directory please,rm -r
+i want to expel this folder,rm -r
+i need to expel this folder,rm -r
+i wish expel this folder,rm -r
+i wish to expel this folder,rm -r
+i would like to expel this folder,rm -r
+please expel this folder,rm -r
+excuse me expel this folder,rm -r
+can i expel this folder please,rm -r
+i want to expel this specified directory,rm -r
+i need to expel this specified directory,rm -r
+i wish expel this specified directory,rm -r
+i wish to expel this specified directory,rm -r
+i would like to expel this specified directory,rm -r
+please expel this specified directory,rm -r
+excuse me expel this specified directory,rm -r
+can i expel this specified directory please,rm -r
+i want to expel this specified folder,rm -r
+i need to expel this specified folder,rm -r
+i wish expel this specified folder,rm -r
+i wish to expel this specified folder,rm -r
+i would like to expel this specified folder,rm -r
+please expel this specified folder,rm -r
+excuse me expel this specified folder,rm -r
+can i expel this specified folder please,rm -r
+i want to expel this pocket,rm -r
+i need to expel this pocket,rm -r
+i wish expel this pocket,rm -r
+i wish to expel this pocket,rm -r
+i would like to expel this pocket,rm -r
+please expel this pocket,rm -r
+excuse me expel this pocket,rm -r
+can i expel this pocket please,rm -r
+i want to extract this directory,rm -r
+i need to extract this directory,rm -r
+i wish extract this directory,rm -r
+i wish to extract this directory,rm -r
+i would like to extract this directory,rm -r
+please extract this directory,rm -r
+excuse me extract this directory,rm -r
+can i extract this directory please,rm -r
+i want to extract this folder,rm -r
+i need to extract this folder,rm -r
+i wish extract this folder,rm -r
+i wish to extract this folder,rm -r
+i would like to extract this folder,rm -r
+please extract this folder,rm -r
+excuse me extract this folder,rm -r
+can i extract this folder please,rm -r
+i want to extract this specified directory,rm -r
+i need to extract this specified directory,rm -r
+i wish extract this specified directory,rm -r
+i wish to extract this specified directory,rm -r
+i would like to extract this specified directory,rm -r
+please extract this specified directory,rm -r
+excuse me extract this specified directory,rm -r
+can i extract this specified directory please,rm -r
+i want to extract this specified folder,rm -r
+i need to extract this specified folder,rm -r
+i wish extract this specified folder,rm -r
+i wish to extract this specified folder,rm -r
+i would like to extract this specified folder,rm -r
+please extract this specified folder,rm -r
+excuse me extract this specified folder,rm -r
+can i extract this specified folder please,rm -r
+i want to extract this pocket,rm -r
+i need to extract this pocket,rm -r
+i wish extract this pocket,rm -r
+i wish to extract this pocket,rm -r
+i would like to extract this pocket,rm -r
+please extract this pocket,rm -r
+excuse me extract this pocket,rm -r
+can i extract this pocket please,rm -r
+i want to get rid of this directory,rm -r
+i need to get rid of this directory,rm -r
+i wish get rid of this directory,rm -r
+i wish to get rid of this directory,rm -r
+i would like to get rid of this directory,rm -r
+please get rid of this directory,rm -r
+excuse me get rid of this directory,rm -r
+can i get rid of this directory please,rm -r
+i want to get rid of this folder,rm -r
+i need to get rid of this folder,rm -r
+i wish get rid of this folder,rm -r
+i wish to get rid of this folder,rm -r
+i would like to get rid of this folder,rm -r
+please get rid of this folder,rm -r
+excuse me get rid of this folder,rm -r
+can i get rid of this folder please,rm -r
+i want to get rid of this specified directory,rm -r
+i need to get rid of this specified directory,rm -r
+i wish get rid of this specified directory,rm -r
+i wish to get rid of this specified directory,rm -r
+i would like to get rid of this specified directory,rm -r
+please get rid of this specified directory,rm -r
+excuse me get rid of this specified directory,rm -r
+can i get rid of this specified directory please,rm -r
+i want to get rid of this specified folder,rm -r
+i need to get rid of this specified folder,rm -r
+i wish get rid of this specified folder,rm -r
+i wish to get rid of this specified folder,rm -r
+i would like to get rid of this specified folder,rm -r
+please get rid of this specified folder,rm -r
+excuse me get rid of this specified folder,rm -r
+can i get rid of this specified folder please,rm -r
+i want to get rid of this pocket,rm -r
+i need to get rid of this pocket,rm -r
+i wish get rid of this pocket,rm -r
+i wish to get rid of this pocket,rm -r
+i would like to get rid of this pocket,rm -r
+please get rid of this pocket,rm -r
+excuse me get rid of this pocket,rm -r
+can i get rid of this pocket please,rm -r
+i want to oust this directory,rm -r
+i need to oust this directory,rm -r
+i wish oust this directory,rm -r
+i wish to oust this directory,rm -r
+i would like to oust this directory,rm -r
+please oust this directory,rm -r
+excuse me oust this directory,rm -r
+can i oust this directory please,rm -r
+i want to oust this folder,rm -r
+i need to oust this folder,rm -r
+i wish oust this folder,rm -r
+i wish to oust this folder,rm -r
+i would like to oust this folder,rm -r
+please oust this folder,rm -r
+excuse me oust this folder,rm -r
+can i oust this folder please,rm -r
+i want to oust this specified directory,rm -r
+i need to oust this specified directory,rm -r
+i wish oust this specified directory,rm -r
+i wish to oust this specified directory,rm -r
+i would like to oust this specified directory,rm -r
+please oust this specified directory,rm -r
+excuse me oust this specified directory,rm -r
+can i oust this specified directory please,rm -r
+i want to oust this specified folder,rm -r
+i need to oust this specified folder,rm -r
+i wish oust this specified folder,rm -r
+i wish to oust this specified folder,rm -r
+i would like to oust this specified folder,rm -r
+please oust this specified folder,rm -r
+excuse me oust this specified folder,rm -r
+can i oust this specified folder please,rm -r
+i want to oust this pocket,rm -r
+i need to oust this pocket,rm -r
+i wish oust this pocket,rm -r
+i wish to oust this pocket,rm -r
+i would like to oust this pocket,rm -r
+please oust this pocket,rm -r
+excuse me oust this pocket,rm -r
+can i oust this pocket please,rm -r
+i want to destroy this directory,rm -r
+i need to destroy this directory,rm -r
+i wish destroy this directory,rm -r
+i wish to destroy this directory,rm -r
+i would like to destroy this directory,rm -r
+please destroy this directory,rm -r
+excuse me destroy this directory,rm -r
+can i destroy this directory please,rm -r
+i want to destroy this folder,rm -r
+i need to destroy this folder,rm -r
+i wish destroy this folder,rm -r
+i wish to destroy this folder,rm -r
+i would like to destroy this folder,rm -r
+please destroy this folder,rm -r
+excuse me destroy this folder,rm -r
+can i destroy this folder please,rm -r
+i want to destroy this specified directory,rm -r
+i need to destroy this specified directory,rm -r
+i wish destroy this specified directory,rm -r
+i wish to destroy this specified directory,rm -r
+i would like to destroy this specified directory,rm -r
+please destroy this specified directory,rm -r
+excuse me destroy this specified directory,rm -r
+can i destroy this specified directory please,rm -r
+i want to destroy this specified folder,rm -r
+i need to destroy this specified folder,rm -r
+i wish destroy this specified folder,rm -r
+i wish to destroy this specified folder,rm -r
+i would like to destroy this specified folder,rm -r
+please destroy this specified folder,rm -r
+excuse me destroy this specified folder,rm -r
+can i destroy this specified folder please,rm -r
+i want to destroy this pocket,rm -r
+i need to destroy this pocket,rm -r
+i wish destroy this pocket,rm -r
+i wish to destroy this pocket,rm -r
+i would like to destroy this pocket,rm -r
+please destroy this pocket,rm -r
+excuse me destroy this pocket,rm -r
+can i destroy this pocket please,rm -r
+i want to clean this directory,rm -r
+i need to clean this directory,rm -r
+i wish clean this directory,rm -r
+i wish to clean this directory,rm -r
+i would like to clean this directory,rm -r
+please clean this directory,rm -r
+excuse me clean this directory,rm -r
+can i clean this directory please,rm -r
+i want to clean this folder,rm -r
+i need to clean this folder,rm -r
+i wish clean this folder,rm -r
+i wish to clean this folder,rm -r
+i would like to clean this folder,rm -r
+please clean this folder,rm -r
+excuse me clean this folder,rm -r
+can i clean this folder please,rm -r
+i want to clean this specified directory,rm -r
+i need to clean this specified directory,rm -r
+i wish clean this specified directory,rm -r
+i wish to clean this specified directory,rm -r
+i would like to clean this specified directory,rm -r
+please clean this specified directory,rm -r
+excuse me clean this specified directory,rm -r
+can i clean this specified directory please,rm -r
+i want to clean this specified folder,rm -r
+i need to clean this specified folder,rm -r
+i wish clean this specified folder,rm -r
+i wish to clean this specified folder,rm -r
+i would like to clean this specified folder,rm -r
+please clean this specified folder,rm -r
+excuse me clean this specified folder,rm -r
+can i clean this specified folder please,rm -r
+i want to clean this pocket,rm -r
+i need to clean this pocket,rm -r
+i wish clean this pocket,rm -r
+i wish to clean this pocket,rm -r
+i would like to clean this pocket,rm -r
+please clean this pocket,rm -r
+excuse me clean this pocket,rm -r
+can i clean this pocket please,rm -r
+i want to drop this directory,rm -r
+i need to drop this directory,rm -r
+i wish drop this directory,rm -r
+i wish to drop this directory,rm -r
+i would like to drop this directory,rm -r
+please drop this directory,rm -r
+excuse me drop this directory,rm -r
+can i drop this directory please,rm -r
+i want to drop this folder,rm -r
+i need to drop this folder,rm -r
+i wish drop this folder,rm -r
+i wish to drop this folder,rm -r
+i would like to drop this folder,rm -r
+please drop this folder,rm -r
+excuse me drop this folder,rm -r
+can i drop this folder please,rm -r
+i want to drop this specified directory,rm -r
+i need to drop this specified directory,rm -r
+i wish drop this specified directory,rm -r
+i wish to drop this specified directory,rm -r
+i would like to drop this specified directory,rm -r
+please drop this specified directory,rm -r
+excuse me drop this specified directory,rm -r
+can i drop this specified directory please,rm -r
+i want to drop this specified folder,rm -r
+i need to drop this specified folder,rm -r
+i wish drop this specified folder,rm -r
+i wish to drop this specified folder,rm -r
+i would like to drop this specified folder,rm -r
+please drop this specified folder,rm -r
+excuse me drop this specified folder,rm -r
+can i drop this specified folder please,rm -r
+i want to drop this pocket,rm -r
+i need to drop this pocket,rm -r
+i wish drop this pocket,rm -r
+i wish to drop this pocket,rm -r
+i would like to drop this pocket,rm -r
+please drop this pocket,rm -r
+excuse me drop this pocket,rm -r
+can i drop this pocket please,rm -r
