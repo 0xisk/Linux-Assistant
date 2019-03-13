@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =============================================================================
-# Created By  : Kirollos Nasr Elias
 # Created Date: Mon Mar  18:54:00 PDT 2019
 # =============================================================================
 """this module provide a way to give suggestions of each query to be written

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =============================================================================
-# Created By  : Kirollos Nasr Elias
 # Created Date: Mon Jan 20 18:54:00 PDT 2019
 # =============================================================================
 """this module provide App class, that is used to show a loading screen while loading the program

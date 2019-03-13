@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # =============================================================================
-# Created By  : Kirollos Nasr
 # Created Date: Mon Jan 20 06:50:00 PDT 2019
 # =============================================================================
 """
@@ -20,7 +19,7 @@ from nltk import Text , regexp_tokenize;
 from pattern.en import lemma
 from os.path import isdir , isfile;
 from pickle import load;
-from search import search;
+import search;
 
 print("1")
 
