@@ -62,6 +62,7 @@ X_train = X_train.values.reshape(-1,1)
 
 
 #applying KNN model
+from sklearn.neighbors import KNeighborsClassifier
 classifier = KNeighborsClassifier(n_neighbors=5)
 classifier.fit(X_train, np.ravel(y_train,order='C'))
 y_pred = classifier.predict(x_test)
@@ -71,6 +72,7 @@ y_pred = classifier.predict(x_test)
 
 
 
-#view F1 score
+#view F1-score
+from sklearn.metrics import classification_report
 print(classification_report(y_test, y_pred))
 
