@@ -37,7 +37,7 @@ def run(command , password=None) :
 	return the stdout of the command ignoring stderr and stdin except for giving 'password' if it found 
 	"""
 	if password != None :
-		command = command.replace("sudo","echo {0} | sudo -S ".format(password))
+		command = command.replace("sudo","echo {0} | sudo -S ".format(password), 1)
 	result = Popen(command , shell = True,stdout=PIPE,stderr=PIPE,stdin=PIPE)
 	output , err = result.communicate()	
 	#if result.returncode != 0 : raise ValueError("the query <{0}> can't work correctly".format(command))
