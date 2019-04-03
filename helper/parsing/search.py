@@ -31,17 +31,14 @@ def append(target="" , folder=None) :
 
 
 def run(command , password=None) :
-	"""
-	'command' is any linux command in string to be executed even it requires a root user
-	that is by give a password to 'password'
-	return the stdout of the command ignoring stderr and stdin except for giving 'password' if it found 
-	"""
 	if password != None :
-		command = command.replace("sudo","echo {0} | sudo -S ".format(password), 1)
+		command = command.replace("sudo","echo {0} | sudo -S ".format(password))
 	result = Popen(command , shell = True,stdout=PIPE,stderr=PIPE,stdin=PIPE)
 	output , err = result.communicate()	
+	print(command)
 	#if result.returncode != 0 : raise ValueError("the query <{0}> can't work correctly".format(command))
-	return output
+	#its items cannot be "" or "\n" or any mix of them with any times, can be empty
+	return [c for c in output.decode("utf-8").split("\n") if c.replace(" ","").replace("\n","") != ""];
 
 
 def updateDb(password=None) :
@@ -67,7 +64,7 @@ def lsearch(target="" , folder=None , _type="f") :
 
 	link = append(target , folder);
 	print(link)
-	return detectType(run("locate -i {0}".format(link) , None).decode("utf-8").split("\n")[:-1]);
+	return detectType(run("locate -i {0}".format(link) , None))
 
 
 def fsearch(target="" , folder=None , _type="f" , password=None) :
@@ -83,9 +80,10 @@ def fsearch(target="" , folder=None , _type="f" , password=None) :
 	"""
 	link = append(target , folder);
 	print(link)
-	return run("sudo find / -type {0} -ipath {1}".format(_type,link) , password=password).decode("utf-8").split("\n")[:-1];
+	return run("sudo find / -type {0} -ipath {1}".format(_type,link) , password=password)
 
 
 
 
-
+# print(lsearch(target="monitor.py" , folder="v4" , _type="f"))
+# print(fsearch(target="monitor.py" , folder="v4" , _type="f" , password="xcsd"))
