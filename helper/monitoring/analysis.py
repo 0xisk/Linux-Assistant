@@ -40,7 +40,7 @@ class Collect :
 
 
 
-# c = Collect(["2018","03","22"] , ["2022","01","02"])
-# print(c.calculate())
+c = Collect(["2018","03","22"] , ["2022","01","02"])
+print(c.calculate())
 
 

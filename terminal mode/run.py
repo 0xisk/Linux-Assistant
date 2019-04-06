@@ -41,8 +41,7 @@ def run(command , password=None) :
 	return output.decode("utf-8")
 
 
-print(validatePassword("jesus")) #validate the password
-
+# print(validatePassword("")) #validate the password
 # run("amixer -D pulse sset Master 50%+")  #increase the volume by 50% 
 # run("amixer -D pulse sset Master 50%-")  #decrease the volume by 50%
 # run("suspend") 						   #suspend the computer
