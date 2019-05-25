@@ -1,18 +1,27 @@
 const {ipcRenderer} = require('electron')
 
-function getUsage() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            // document.getElementById("test").innerHTML = xhttp.responseText;
-        }
-    };
-    try {
-        xhttp.open("GET", "http://localhost:9000/usage", true);
-        xhttp.send();
-    }
-    catch(err) {}
-}
+// function getUsage() {
+//     var xhttp = new XMLHttpRequest();
+//     function toTwoArrays(j) {
+//         if(j == null) { return [[],[]]; }
+//         data = JSON.parse(j);
+//         var keys = Object.keys(data)
+//         var values = Object.values(data)
+//         return [keys , values]
+//     }
+//     xhttp.onreadystatechange = function() {
+//         if (this.readyState == 4 && this.status == 200) {
+//             // document.getElementById("test").innerHTML = xhttp.responseText;
+//             document.getElementById("test").innerHTML = xhttp.responseText
+
+//         }
+//     };
+//     try {
+//         xhttp.open("GET", "http://localhost:9000/usage", true);
+//         xhttp.send();
+//     }
+//     catch(err) {}
+// }
 
 //-----------------------------------------------------------------------------
 
@@ -23,27 +32,50 @@ function scrollButtom(eid) {
 
 //-----------------------------------------------------------------------------
 
+// function sendQuery() {
+//     var q = document.getElementById("input").value; 
+//     if(q.replace(" ","") == "") return;
+//     appendReply(q)
+
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.onreadystatechange = function() {
+//         if (this.readyState == 4 && this.status == 200) {
+//             appendSend(xhttp.responseText)
+//             scrollButtom("msg_history")
+//         }
+//     };    
+//     try {
+//         xhttp.open("POST", "http://localhost:9000/text", true);
+//         xhttp.send(q);
+//     }
+//     catch(err) {
+//         appendSend("Sorry an error has been occured")
+//         scrollButtom("msg_history")
+//     }
+	
+// }
+
+//----------------------------------------------------------------------------
+
 function sendQuery() {
     var q = document.getElementById("input").value; 
     if(q.replace(" ","") == "") return;
     appendReply(q)
 
     var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            appendSend(xhttp.responseText)
-            scrollButtom("msg_history")
-        }
-    };    
+    
     try {
-        xhttp.open("POST", "http://localhost:9000/text", true);
+        xhttp.open("POST", "http://localhost:9000/text", false);
         xhttp.send(q);
+        appendSend(xhttp.responseText)
+        scrollButtom("msg_history")
+
     }
     catch(err) {
         appendSend("Sorry an error has been occured")
         scrollButtom("msg_history")
     }
-	
+    
 }
 
 //----------------------------------------------------------------------------
@@ -76,3 +108,15 @@ function appendReply(msg) {
 //     appendSend(input)
 //     sendQuery(input)
 // })
+
+
+function createBrowserWindow() {
+    const remote = require('electron').remote;
+    const BrowserWindow = remote.BrowserWindow;
+    const win = new BrowserWindow({
+    height: 600,
+    width: 800
+    });
+    win.loadFile('chart/samples/vue/bar/bar-with-custom-data-labels.html')
+    getUsage()
+}

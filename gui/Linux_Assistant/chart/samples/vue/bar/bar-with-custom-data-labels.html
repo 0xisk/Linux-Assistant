@@ -12,29 +12,56 @@
 
   <style>
     #chart {
-            max-width: 650px;
+            max-width: 90%;
+            width : 90%;
             margin: 35px auto;
         }
     </style>
 </head>
 
 <body>
+    <div id="test">jesus christ</div>
   <div id="chart">
     <apexchart type=bar height=350 :options="chartOptions" :series="series" />
   </div>
 
-  <!-- Below element is just for displaying source code. it is not required. DO NOT USE -->
-  <div id="html">
-    &lt;div id="chart">
-      &lt;apexchart type=bar height=350 :options="chartOptions" :series="series" />
-    &lt;/div>
-  </div>
 
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
 
+
   <script>
+    var ks = [];
+    var vs = [];
+
+    function getUsage() {
+        var xhttp = new XMLHttpRequest();
+        function toTwoArrays(j) {
+            if(j == null) { return [[],[]]; }
+            data = JSON.parse(xhttp.responseText.split("'").join('"'));
+            // data = j;
+            var keys = Object.keys(data)
+            var values = Object.values(data)
+            return [keys , values]
+        }
+        try {
+            xhttp.open("GET", "http://localhost:9000/usage", false);
+            xhttp.send();
+
+            var dd = toTwoArrays(xhttp.responseText);
+            ks = dd[0];
+            vs = dd[1]; 
+        }
+        catch(err) {
+            // document.getElementById("test").innerHTML = err; 
+            ks = [];
+            vs = [];
+        }
+
+    }
+
+    getUsage();
 
     new Vue({
       el: '#chart',
@@ -43,7 +70,7 @@
       },
       data: {
         series: [{
-          data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380,2323,1232,12321]
+          data: vs
         }],
         chartOptions: {
           plotOptions: {
@@ -79,9 +106,7 @@
             colors: ['#fff']
           },
           xaxis: {
-            categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
-              'United States', 'China', 'India' , "asd" , "Asd" , "SD"
-            ],
+            categories: ks
           },
           yaxis: {
             labels: {
