@@ -19204,3 +19204,1167 @@ i long to downgrade volume, amixer -D pulse sset Master 50%-
 i long to downgrade speaker, amixer -D pulse sset Master 50%-
 i long to downgrade sound, amixer -D pulse sset Master 50%-
 i long to downgrade tone, amixer -D pulse sset Master 50%-
+view system information, uname -a
+view kernel information, uname -a
+view operating system information, uname -a
+view os information, uname -a
+show system information, uname -a
+show kernel information, uname -a
+show operating system information, uname -a
+show os information, uname -a
+know system information, uname -a
+know kernel information, uname -a
+know operating system information, uname -a
+know os information, uname -a
+lookup system information, uname -a
+lookup kernel information, uname -a
+lookup operating system information, uname -a
+lookup os information, uname -a
+display system information, uname -a
+display kernel information, uname -a
+display operating system information, uname -a
+display os information, uname -a
+i want to view system information, uname -a
+i want to view kernel information, uname -a
+i want to view operating system information, uname -a
+i want to view os information, uname -a
+i want to show system information, uname -a
+i want to show kernel information, uname -a
+i want to show operating system information, uname -a
+i want to show os information, uname -a
+i want to know system information, uname -a
+i want to know kernel information, uname -a
+i want to know operating system information, uname -a
+i want to know os information, uname -a
+i want to lookup system information, uname -a
+i want to lookup kernel information, uname -a
+i want to lookup operating system information, uname -a
+i want to lookup os information, uname -a
+i want to display system information, uname -a
+i want to display kernel information, uname -a
+i want to display operating system information, uname -a
+i want to display os information, uname -a
+i need to view system information, uname -a
+i need to view kernel information, uname -a
+i need to view operating system information, uname -a
+i need to view os information, uname -a
+i need to show system information, uname -a
+i need to show kernel information, uname -a
+i need to show operating system information, uname -a
+i need to show os information, uname -a
+i need to know system information, uname -a
+i need to know kernel information, uname -a
+i need to know operating system information, uname -a
+i need to know os information, uname -a
+i need to lookup system information, uname -a
+i need to lookup kernel information, uname -a
+i need to lookup operating system information, uname -a
+i need to lookup os information, uname -a
+i need to display system information, uname -a
+i need to display kernel information, uname -a
+i need to display operating system information, uname -a
+i need to display os information, uname -a
+i wish to view system information, uname -a
+i wish to view kernel information, uname -a
+i wish to view operating system information, uname -a
+i wish to view os information, uname -a
+i wish to show system information, uname -a
+i wish to show kernel information, uname -a
+i wish to show operating system information, uname -a
+i wish to show os information, uname -a
+i wish to know system information, uname -a
+i wish to know kernel information, uname -a
+i wish to know operating system information, uname -a
+i wish to know os information, uname -a
+i wish to lookup system information, uname -a
+i wish to lookup kernel information, uname -a
+i wish to lookup operating system information, uname -a
+i wish to lookup os information, uname -a
+i wish to display system information, uname -a
+i wish to display kernel information, uname -a
+i wish to display operating system information, uname -a
+i wish to display os information, uname -a
+i demand to view system information, uname -a
+i demand to view kernel information, uname -a
+i demand to view operating system information, uname -a
+i demand to view os information, uname -a
+i demand to show system information, uname -a
+i demand to show kernel information, uname -a
+i demand to show operating system information, uname -a
+i demand to show os information, uname -a
+i demand to know system information, uname -a
+i demand to know kernel information, uname -a
+i demand to know operating system information, uname -a
+i demand to know os information, uname -a
+i demand to lookup system information, uname -a
+i demand to lookup kernel information, uname -a
+i demand to lookup operating system information, uname -a
+i demand to lookup os information, uname -a
+i demand to display system information, uname -a
+i demand to display kernel information, uname -a
+i demand to display operating system information, uname -a
+i demand to display os information, uname -a
+i long to view system information, uname -a
+i long to view kernel information, uname -a
+i long to view operating system information, uname -a
+i long to view os information, uname -a
+i long to show system information, uname -a
+i long to show kernel information, uname -a
+i long to show operating system information, uname -a
+i long to show os information, uname -a
+i long to know system information, uname -a
+i long to know kernel information, uname -a
+i long to know operating system information, uname -a
+i long to know os information, uname -a
+i long to lookup system information, uname -a
+i long to lookup kernel information, uname -a
+i long to lookup operating system information, uname -a
+i long to lookup os information, uname -a
+i long to display system information, uname -a
+i long to display kernel information, uname -a
+i long to display operating system information, uname -a
+i long to display os information, uname -a
+how long my computer has been up, uptime -p
+how long my computer has been running, uptime -p
+how long my computer has been working, uptime -p
+how long my computer is functional, uptime -p
+how long my computer is working, uptime -p
+how long my computer is running, uptime -p
+how much pc has been up, uptime -p
+how much pc has been running, uptime -p
+how much pc has been working, uptime -p
+how much pc is functional, uptime -p
+how much pc is working, uptime -p
+how much pc is running, uptime -p
+how long laptop has been up, uptime -p
+how long laptop has been running, uptime -p
+how long laptop has been working, uptime -p
+how long laptop is functional, uptime -p
+how long laptop is working, uptime -p
+how long laptop is running, uptime -p
+how much desktop has been up, uptime -p
+how much desktop has been running, uptime -p
+how much desktop has been working, uptime -p
+how much desktop is functional, uptime -p
+how much desktop is working, uptime -p
+how much desktop is running, uptime -p
+i want to know how long my computer has been up, uname -a
+i want to know how long my computer has been running, uname -a
+i want to know how long my computer has been working, uname -a
+i want to know how long my computer is functional, uname -a
+i want to know how long my computer is working, uname -a
+i want to know how long my computer is running, uname -a
+i want to know how much pc has been up, uname -a
+i want to know how much pc has been running, uname -a
+i want to know how much pc has been working, uname -a
+i want to know how much pc is functional, uname -a
+i want to know how much pc is working, uname -a
+i want to know how much pc is running, uname -a
+i want to know how long laptop has been up, uname -a
+i want to know how long laptop has been running, uname -a
+i want to know how long laptop has been working, uname -a
+i want to know how long laptop is functional, uname -a
+i want to know how long laptop is working, uname -a
+i want to know how long laptop is running, uname -a
+i want to know how much desktop has been up, uname -a
+i want to know how much desktop has been running, uname -a
+i want to know how much desktop has been working, uname -a
+i want to know how much desktop is functional, uname -a
+i want to know how much desktop is working, uname -a
+i want to know how much desktop is running, uname -a
+i need to learn how long my computer has been up, uname -a
+i need to learn how long my computer has been running, uname -a
+i need to learn how long my computer has been working, uname -a
+i need to learn how long my computer is functional, uname -a
+i need to learn how long my computer is working, uname -a
+i need to learn how long my computer is running, uname -a
+i need to learn how much pc has been up, uname -a
+i need to learn how much pc has been running, uname -a
+i need to learn how much pc has been working, uname -a
+i need to learn how much pc is functional, uname -a
+i need to learn how much pc is working, uname -a
+i need to learn how much pc is running, uname -a
+i need to learn how long laptop has been up, uname -a
+i need to learn how long laptop has been running, uname -a
+i need to learn how long laptop has been working, uname -a
+i need to learn how long laptop is functional, uname -a
+i need to learn how long laptop is working, uname -a
+i need to learn how long laptop is running, uname -a
+i need to learn how much desktop has been up, uname -a
+i need to learn how much desktop has been running, uname -a
+i need to learn how much desktop has been working, uname -a
+i need to learn how much desktop is functional, uname -a
+i need to learn how much desktop is working, uname -a
+i need to learn how much desktop is running, uname -a
+i wish to realize how long my computer has been up, uname -a
+i wish to realize how long my computer has been running, uname -a
+i wish to realize how long my computer has been working, uname -a
+i wish to realize how long my computer is functional, uname -a
+i wish to realize how long my computer is working, uname -a
+i wish to realize how long my computer is running, uname -a
+i wish to realize how much pc has been up, uname -a
+i wish to realize how much pc has been running, uname -a
+i wish to realize how much pc has been working, uname -a
+i wish to realize how much pc is functional, uname -a
+i wish to realize how much pc is working, uname -a
+i wish to realize how much pc is running, uname -a
+i wish to realize how long laptop has been up, uname -a
+i wish to realize how long laptop has been running, uname -a
+i wish to realize how long laptop has been working, uname -a
+i wish to realize how long laptop is functional, uname -a
+i wish to realize how long laptop is working, uname -a
+i wish to realize how long laptop is running, uname -a
+i wish to realize how much desktop has been up, uname -a
+i wish to realize how much desktop has been running, uname -a
+i wish to realize how much desktop has been working, uname -a
+i wish to realize how much desktop is functional, uname -a
+i wish to realize how much desktop is working, uname -a
+i wish to realize how much desktop is running, uname -a
+i demand to see how long my computer has been up, uname -a
+i demand to see how long my computer has been running, uname -a
+i demand to see how long my computer has been working, uname -a
+i demand to see how long my computer is functional, uname -a
+i demand to see how long my computer is working, uname -a
+i demand to see how long my computer is running, uname -a
+i demand to see how much pc has been up, uname -a
+i demand to see how much pc has been running, uname -a
+i demand to see how much pc has been working, uname -a
+i demand to see how much pc is functional, uname -a
+i demand to see how much pc is working, uname -a
+i demand to see how much pc is running, uname -a
+i demand to see how long laptop has been up, uname -a
+i demand to see how long laptop has been running, uname -a
+i demand to see how long laptop has been working, uname -a
+i demand to see how long laptop is functional, uname -a
+i demand to see how long laptop is working, uname -a
+i demand to see how long laptop is running, uname -a
+i demand to see how much desktop has been up, uname -a
+i demand to see how much desktop has been running, uname -a
+i demand to see how much desktop has been working, uname -a
+i demand to see how much desktop is functional, uname -a
+i demand to see how much desktop is working, uname -a
+i demand to see how much desktop is running, uname -a
+i long to read how long my computer has been up, uname -a
+i long to read how long my computer has been running, uname -a
+i long to read how long my computer has been working, uname -a
+i long to read how long my computer is functional, uname -a
+i long to read how long my computer is working, uname -a
+i long to read how long my computer is running, uname -a
+i long to read how much pc has been up, uname -a
+i long to read how much pc has been running, uname -a
+i long to read how much pc has been working, uname -a
+i long to read how much pc is functional, uname -a
+i long to read how much pc is working, uname -a
+i long to read how much pc is running, uname -a
+i long to read how long laptop has been up, uname -a
+i long to read how long laptop has been running, uname -a
+i long to read how long laptop has been working, uname -a
+i long to read how long laptop is functional, uname -a
+i long to read how long laptop is working, uname -a
+i long to read how long laptop is running, uname -a
+i long to read how much desktop has been up, uname -a
+i long to read how much desktop has been running, uname -a
+i long to read how much desktop has been working, uname -a
+i long to read how much desktop is functional, uname -a
+i long to read how much desktop is working, uname -a
+i long to read how much desktop is running, uname -a
+view ip address, hostname -i
+view local host, hostname -i
+view host number, hostname -i
+show ip address, hostname -i
+show local host, hostname -i
+show host number, hostname -i
+know ip address, hostname -i
+know local host, hostname -i
+know host number, hostname -i
+lookup ip address, hostname -i
+lookup local host, hostname -i
+lookup host number, hostname -i
+display ip address, hostname -i
+display local host, hostname -i
+display host number, hostname -i
+print ip address, hostname -i
+print local host, hostname -i
+print host number, hostname -i
+i want to view ip address, hostname -i
+i want to view local host, hostname -i
+i want to view host number, hostname -i
+i want to show ip address, hostname -i
+i want to show local host, hostname -i
+i want to show host number, hostname -i
+i want to know ip address, hostname -i
+i want to know local host, hostname -i
+i want to know host number, hostname -i
+i want to lookup ip address, hostname -i
+i want to lookup local host, hostname -i
+i want to lookup host number, hostname -i
+i want to display ip address, hostname -i
+i want to display local host, hostname -i
+i want to display host number, hostname -i
+i want to print ip address, hostname -i
+i want to print local host, hostname -i
+i want to print host number, hostname -i
+i need to view ip address, hostname -i
+i need to view local host, hostname -i
+i need to view host number, hostname -i
+i need to show ip address, hostname -i
+i need to show local host, hostname -i
+i need to show host number, hostname -i
+i need to know ip address, hostname -i
+i need to know local host, hostname -i
+i need to know host number, hostname -i
+i need to lookup ip address, hostname -i
+i need to lookup local host, hostname -i
+i need to lookup host number, hostname -i
+i need to display ip address, hostname -i
+i need to display local host, hostname -i
+i need to display host number, hostname -i
+i need to print ip address, hostname -i
+i need to print local host, hostname -i
+i need to print host number, hostname -i
+i wish to view ip address, hostname -i
+i wish to view local host, hostname -i
+i wish to view host number, hostname -i
+i wish to show ip address, hostname -i
+i wish to show local host, hostname -i
+i wish to show host number, hostname -i
+i wish to know ip address, hostname -i
+i wish to know local host, hostname -i
+i wish to know host number, hostname -i
+i wish to lookup ip address, hostname -i
+i wish to lookup local host, hostname -i
+i wish to lookup host number, hostname -i
+i wish to display ip address, hostname -i
+i wish to display local host, hostname -i
+i wish to display host number, hostname -i
+i wish to print ip address, hostname -i
+i wish to print local host, hostname -i
+i wish to print host number, hostname -i
+i demand to view ip address, hostname -i
+i demand to view local host, hostname -i
+i demand to view host number, hostname -i
+i demand to show ip address, hostname -i
+i demand to show local host, hostname -i
+i demand to show host number, hostname -i
+i demand to know ip address, hostname -i
+i demand to know local host, hostname -i
+i demand to know host number, hostname -i
+i demand to lookup ip address, hostname -i
+i demand to lookup local host, hostname -i
+i demand to lookup host number, hostname -i
+i demand to display ip address, hostname -i
+i demand to display local host, hostname -i
+i demand to display host number, hostname -i
+i demand to print ip address, hostname -i
+i demand to print local host, hostname -i
+i demand to print host number, hostname -i
+i long to view ip address, hostname -i
+i long to view local host, hostname -i
+i long to view host number, hostname -i
+i long to show ip address, hostname -i
+i long to show local host, hostname -i
+i long to show host number, hostname -i
+i long to know ip address, hostname -i
+i long to know local host, hostname -i
+i long to know host number, hostname -i
+i long to lookup ip address, hostname -i
+i long to lookup local host, hostname -i
+i long to lookup host number, hostname -i
+i long to display ip address, hostname -i
+i long to display local host, hostname -i
+i long to display host number, hostname -i
+i long to print ip address, hostname -i
+i long to print local host, hostname -i
+i long to print host number, hostname -i
+view current date, date
+view current time, date
+view date, date
+view time, date
+view clock, date
+show current date, date
+show current time, date
+show date, date
+show time, date
+show clock, date
+know current date, date
+know current time, date
+know date, date
+know time, date
+know clock, date
+lookup current date, date
+lookup current time, date
+lookup date, date
+lookup time, date
+lookup clock, date
+display current date, date
+display current time, date
+display date, date
+display time, date
+display clock, date
+print current date, date
+print current time, date
+print date, date
+print time, date
+print clock, date
+i want to view current date, date
+i want to view current time, date
+i want to view date, date
+i want to view time, date
+i want to view clock, date
+i want to show current date, date
+i want to show current time, date
+i want to show date, date
+i want to show time, date
+i want to show clock, date
+i want to know current date, date
+i want to know current time, date
+i want to know date, date
+i want to know time, date
+i want to know clock, date
+i want to lookup current date, date
+i want to lookup current time, date
+i want to lookup date, date
+i want to lookup time, date
+i want to lookup clock, date
+i want to display current date, date
+i want to display current time, date
+i want to display date, date
+i want to display time, date
+i want to display clock, date
+i want to print current date, date
+i want to print current time, date
+i want to print date, date
+i want to print time, date
+i want to print clock, date
+i need to view current date, date
+i need to view current time, date
+i need to view date, date
+i need to view time, date
+i need to view clock, date
+i need to show current date, date
+i need to show current time, date
+i need to show date, date
+i need to show time, date
+i need to show clock, date
+i need to know current date, date
+i need to know current time, date
+i need to know date, date
+i need to know time, date
+i need to know clock, date
+i need to lookup current date, date
+i need to lookup current time, date
+i need to lookup date, date
+i need to lookup time, date
+i need to lookup clock, date
+i need to display current date, date
+i need to display current time, date
+i need to display date, date
+i need to display time, date
+i need to display clock, date
+i need to print current date, date
+i need to print current time, date
+i need to print date, date
+i need to print time, date
+i need to print clock, date
+i wish to view current date, date
+i wish to view current time, date
+i wish to view date, date
+i wish to view time, date
+i wish to view clock, date
+i wish to show current date, date
+i wish to show current time, date
+i wish to show date, date
+i wish to show time, date
+i wish to show clock, date
+i wish to know current date, date
+i wish to know current time, date
+i wish to know date, date
+i wish to know time, date
+i wish to know clock, date
+i wish to lookup current date, date
+i wish to lookup current time, date
+i wish to lookup date, date
+i wish to lookup time, date
+i wish to lookup clock, date
+i wish to display current date, date
+i wish to display current time, date
+i wish to display date, date
+i wish to display time, date
+i wish to display clock, date
+i wish to print current date, date
+i wish to print current time, date
+i wish to print date, date
+i wish to print time, date
+i wish to print clock, date
+i demand to view current date, date
+i demand to view current time, date
+i demand to view date, date
+i demand to view time, date
+i demand to view clock, date
+i demand to show current date, date
+i demand to show current time, date
+i demand to show date, date
+i demand to show time, date
+i demand to show clock, date
+i demand to know current date, date
+i demand to know current time, date
+i demand to know date, date
+i demand to know time, date
+i demand to know clock, date
+i demand to lookup current date, date
+i demand to lookup current time, date
+i demand to lookup date, date
+i demand to lookup time, date
+i demand to lookup clock, date
+i demand to display current date, date
+i demand to display current time, date
+i demand to display date, date
+i demand to display time, date
+i demand to display clock, date
+i demand to print current date, date
+i demand to print current time, date
+i demand to print date, date
+i demand to print time, date
+i demand to print clock, date
+i long to view current date, date
+i long to view current time, date
+i long to view date, date
+i long to view time, date
+i long to view clock, date
+i long to show current date, date
+i long to show current time, date
+i long to show date, date
+i long to show time, date
+i long to show clock, date
+i long to know current date, date
+i long to know current time, date
+i long to know date, date
+i long to know time, date
+i long to know clock, date
+i long to lookup current date, date
+i long to lookup current time, date
+i long to lookup date, date
+i long to lookup time, date
+i long to lookup clock, date
+i long to display current date, date
+i long to display current time, date
+i long to display date, date
+i long to display time, date
+i long to display clock, date
+i long to print current date, date
+i long to print current time, date
+i long to print date, date
+i long to print time, date
+i long to print clock, date
+view current month calendar, cal
+view present month calendar, cal
+view this month calendar, cal
+show current month calendar, cal
+show present month calendar, cal
+show this month calendar, cal
+know current month calendar, cal
+know present month calendar, cal
+know this month calendar, cal
+lookup current month calendar, cal
+lookup present month calendar, cal
+lookup this month calendar, cal
+display current month calendar, cal
+display present month calendar, cal
+display this month calendar, cal
+print current month calendar, cal
+print present month calendar, cal
+print this month calendar, cal
+i want to view current month calendar, cal
+i want to view present month calendar, cal
+i want to view this month calendar, cal
+i want to show current month calendar, cal
+i want to show present month calendar, cal
+i want to show this month calendar, cal
+i want to know current month calendar, cal
+i want to know present month calendar, cal
+i want to know this month calendar, cal
+i want to lookup current month calendar, cal
+i want to lookup present month calendar, cal
+i want to lookup this month calendar, cal
+i want to display current month calendar, cal
+i want to display present month calendar, cal
+i want to display this month calendar, cal
+i want to print current month calendar, cal
+i want to print present month calendar, cal
+i want to print this month calendar, cal
+i need to view current month calendar, cal
+i need to view present month calendar, cal
+i need to view this month calendar, cal
+i need to show current month calendar, cal
+i need to show present month calendar, cal
+i need to show this month calendar, cal
+i need to know current month calendar, cal
+i need to know present month calendar, cal
+i need to know this month calendar, cal
+i need to lookup current month calendar, cal
+i need to lookup present month calendar, cal
+i need to lookup this month calendar, cal
+i need to display current month calendar, cal
+i need to display present month calendar, cal
+i need to display this month calendar, cal
+i need to print current month calendar, cal
+i need to print present month calendar, cal
+i need to print this month calendar, cal
+i wish to view current month calendar, cal
+i wish to view present month calendar, cal
+i wish to view this month calendar, cal
+i wish to show current month calendar, cal
+i wish to show present month calendar, cal
+i wish to show this month calendar, cal
+i wish to know current month calendar, cal
+i wish to know present month calendar, cal
+i wish to know this month calendar, cal
+i wish to lookup current month calendar, cal
+i wish to lookup present month calendar, cal
+i wish to lookup this month calendar, cal
+i wish to display current month calendar, cal
+i wish to display present month calendar, cal
+i wish to display this month calendar, cal
+i wish to print current month calendar, cal
+i wish to print present month calendar, cal
+i wish to print this month calendar, cal
+i demand to view current month calendar, cal
+i demand to view present month calendar, cal
+i demand to view this month calendar, cal
+i demand to show current month calendar, cal
+i demand to show present month calendar, cal
+i demand to show this month calendar, cal
+i demand to know current month calendar, cal
+i demand to know present month calendar, cal
+i demand to know this month calendar, cal
+i demand to lookup current month calendar, cal
+i demand to lookup present month calendar, cal
+i demand to lookup this month calendar, cal
+i demand to display current month calendar, cal
+i demand to display present month calendar, cal
+i demand to display this month calendar, cal
+i demand to print current month calendar, cal
+i demand to print present month calendar, cal
+i demand to print this month calendar, cal
+i long to view current month calendar, cal
+i long to view present month calendar, cal
+i long to view this month calendar, cal
+i long to show current month calendar, cal
+i long to show present month calendar, cal
+i long to show this month calendar, cal
+i long to know current month calendar, cal
+i long to know present month calendar, cal
+i long to know this month calendar, cal
+i long to lookup current month calendar, cal
+i long to lookup present month calendar, cal
+i long to lookup this month calendar, cal
+i long to display current month calendar, cal
+i long to display present month calendar, cal
+i long to display this month calendar, cal
+i long to print current month calendar, cal
+i long to print present month calendar, cal
+i long to print this month calendar, cal
+view current year calendar, cal -y
+view present year calendar, cal -y
+view this year calendar, cal -y
+view whole year calendar, cal -y
+show current year calendar, cal -y
+show present year calendar, cal -y
+show this year calendar, cal -y
+show whole year calendar, cal -y
+know current year calendar, cal -y
+know present year calendar, cal -y
+know this year calendar, cal -y
+know whole year calendar, cal -y
+lookup current year calendar, cal -y
+lookup present year calendar, cal -y
+lookup this year calendar, cal -y
+lookup whole year calendar, cal -y
+display current year calendar, cal -y
+display present year calendar, cal -y
+display this year calendar, cal -y
+display whole year calendar, cal -y
+print current year calendar, cal -y
+print present year calendar, cal -y
+print this year calendar, cal -y
+print whole year calendar, cal -y
+i want to view current year calendar, cal -y
+i want to view present year calendar, cal -y
+i want to view this year calendar, cal -y
+i want to view whole year calendar, cal -y
+i want to show current year calendar, cal -y
+i want to show present year calendar, cal -y
+i want to show this year calendar, cal -y
+i want to show whole year calendar, cal -y
+i want to know current year calendar, cal -y
+i want to know present year calendar, cal -y
+i want to know this year calendar, cal -y
+i want to know whole year calendar, cal -y
+i want to lookup current year calendar, cal -y
+i want to lookup present year calendar, cal -y
+i want to lookup this year calendar, cal -y
+i want to lookup whole year calendar, cal -y
+i want to display current year calendar, cal -y
+i want to display present year calendar, cal -y
+i want to display this year calendar, cal -y
+i want to display whole year calendar, cal -y
+i want to print current year calendar, cal -y
+i want to print present year calendar, cal -y
+i want to print this year calendar, cal -y
+i want to print whole year calendar, cal -y
+i need to view current year calendar, cal -y
+i need to view present year calendar, cal -y
+i need to view this year calendar, cal -y
+i need to view whole year calendar, cal -y
+i need to show current year calendar, cal -y
+i need to show present year calendar, cal -y
+i need to show this year calendar, cal -y
+i need to show whole year calendar, cal -y
+i need to know current year calendar, cal -y
+i need to know present year calendar, cal -y
+i need to know this year calendar, cal -y
+i need to know whole year calendar, cal -y
+i need to lookup current year calendar, cal -y
+i need to lookup present year calendar, cal -y
+i need to lookup this year calendar, cal -y
+i need to lookup whole year calendar, cal -y
+i need to display current year calendar, cal -y
+i need to display present year calendar, cal -y
+i need to display this year calendar, cal -y
+i need to display whole year calendar, cal -y
+i need to print current year calendar, cal -y
+i need to print present year calendar, cal -y
+i need to print this year calendar, cal -y
+i need to print whole year calendar, cal -y
+i wish to view current year calendar, cal -y
+i wish to view present year calendar, cal -y
+i wish to view this year calendar, cal -y
+i wish to view whole year calendar, cal -y
+i wish to show current year calendar, cal -y
+i wish to show present year calendar, cal -y
+i wish to show this year calendar, cal -y
+i wish to show whole year calendar, cal -y
+i wish to know current year calendar, cal -y
+i wish to know present year calendar, cal -y
+i wish to know this year calendar, cal -y
+i wish to know whole year calendar, cal -y
+i wish to lookup current year calendar, cal -y
+i wish to lookup present year calendar, cal -y
+i wish to lookup this year calendar, cal -y
+i wish to lookup whole year calendar, cal -y
+i wish to display current year calendar, cal -y
+i wish to display present year calendar, cal -y
+i wish to display this year calendar, cal -y
+i wish to display whole year calendar, cal -y
+i wish to print current year calendar, cal -y
+i wish to print present year calendar, cal -y
+i wish to print this year calendar, cal -y
+i wish to print whole year calendar, cal -y
+i demand to view current year calendar, cal -y
+i demand to view present year calendar, cal -y
+i demand to view this year calendar, cal -y
+i demand to view whole year calendar, cal -y
+i demand to show current year calendar, cal -y
+i demand to show present year calendar, cal -y
+i demand to show this year calendar, cal -y
+i demand to show whole year calendar, cal -y
+i demand to know current year calendar, cal -y
+i demand to know present year calendar, cal -y
+i demand to know this year calendar, cal -y
+i demand to know whole year calendar, cal -y
+i demand to lookup current year calendar, cal -y
+i demand to lookup present year calendar, cal -y
+i demand to lookup this year calendar, cal -y
+i demand to lookup whole year calendar, cal -y
+i demand to display current year calendar, cal -y
+i demand to display present year calendar, cal -y
+i demand to display this year calendar, cal -y
+i demand to display whole year calendar, cal -y
+i demand to print current year calendar, cal -y
+i demand to print present year calendar, cal -y
+i demand to print this year calendar, cal -y
+i demand to print whole year calendar, cal -y
+i long to view current year calendar, cal -y
+i long to view present year calendar, cal -y
+i long to view this year calendar, cal -y
+i long to view whole year calendar, cal -y
+i long to show current year calendar, cal -y
+i long to show present year calendar, cal -y
+i long to show this year calendar, cal -y
+i long to show whole year calendar, cal -y
+i long to know current year calendar, cal -y
+i long to know present year calendar, cal -y
+i long to know this year calendar, cal -y
+i long to know whole year calendar, cal -y
+i long to lookup current year calendar, cal -y
+i long to lookup present year calendar, cal -y
+i long to lookup this year calendar, cal -y
+i long to lookup whole year calendar, cal -y
+i long to display current year calendar, cal -y
+i long to display present year calendar, cal -y
+i long to display this year calendar, cal -y
+i long to display whole year calendar, cal -y
+i long to print current year calendar, cal -y
+i long to print present year calendar, cal -y
+i long to print this year calendar, cal -y
+i long to print whole year calendar, cal -y
+view current user, whoami
+view present user, whoami
+view logged in user, whoami
+view working user, whoami
+view signed in user, whoami
+show current user, whoami
+show present user, whoami
+show logged in user, whoami
+show working user, whoami
+show signed in user, whoami
+know current user, whoami
+know present user, whoami
+know logged in user, whoami
+know working user, whoami
+know signed in user, whoami
+lookup current user, whoami
+lookup present user, whoami
+lookup logged in user, whoami
+lookup working user, whoami
+lookup signed in user, whoami
+display current user, whoami
+display present user, whoami
+display logged in user, whoami
+display working user, whoami
+display signed in user, whoami
+print current user, whoami
+print present user, whoami
+print logged in user, whoami
+print working user, whoami
+print signed in user, whoami
+what is the current user, whoami
+what is the present user, whoami
+what is the logged in user, whoami
+what is the working user, whoami
+what is the signed in user, whoami
+who is current user, whoami
+who is present user, whoami
+who is logged in user, whoami
+who is working user, whoami
+who is signed in user, whoami
+i want to view current user, whoami
+i want to view present user, whoami
+i want to view logged in user, whoami
+i want to view working user, whoami
+i want to view signed in user, whoami
+i want to show current user, whoami
+i want to show present user, whoami
+i want to show logged in user, whoami
+i want to show working user, whoami
+i want to show signed in user, whoami
+i want to know current user, whoami
+i want to know present user, whoami
+i want to know logged in user, whoami
+i want to know working user, whoami
+i want to know signed in user, whoami
+i want to lookup current user, whoami
+i want to lookup present user, whoami
+i want to lookup logged in user, whoami
+i want to lookup working user, whoami
+i want to lookup signed in user, whoami
+i want to display current user, whoami
+i want to display present user, whoami
+i want to display logged in user, whoami
+i want to display working user, whoami
+i want to display signed in user, whoami
+i want to print current user, whoami
+i want to print present user, whoami
+i want to print logged in user, whoami
+i want to print working user, whoami
+i want to print signed in user, whoami
+i want to what is the current user, whoami
+i want to what is the present user, whoami
+i want to what is the logged in user, whoami
+i want to what is the working user, whoami
+i want to what is the signed in user, whoami
+i want to who is current user, whoami
+i want to who is present user, whoami
+i want to who is logged in user, whoami
+i want to who is working user, whoami
+i want to who is signed in user, whoami
+i need to view current user, whoami
+i need to view present user, whoami
+i need to view logged in user, whoami
+i need to view working user, whoami
+i need to view signed in user, whoami
+i need to show current user, whoami
+i need to show present user, whoami
+i need to show logged in user, whoami
+i need to show working user, whoami
+i need to show signed in user, whoami
+i need to know current user, whoami
+i need to know present user, whoami
+i need to know logged in user, whoami
+i need to know working user, whoami
+i need to know signed in user, whoami
+i need to lookup current user, whoami
+i need to lookup present user, whoami
+i need to lookup logged in user, whoami
+i need to lookup working user, whoami
+i need to lookup signed in user, whoami
+i need to display current user, whoami
+i need to display present user, whoami
+i need to display logged in user, whoami
+i need to display working user, whoami
+i need to display signed in user, whoami
+i need to print current user, whoami
+i need to print present user, whoami
+i need to print logged in user, whoami
+i need to print working user, whoami
+i need to print signed in user, whoami
+i need to what is the current user, whoami
+i need to what is the present user, whoami
+i need to what is the logged in user, whoami
+i need to what is the working user, whoami
+i need to what is the signed in user, whoami
+i need to who is current user, whoami
+i need to who is present user, whoami
+i need to who is logged in user, whoami
+i need to who is working user, whoami
+i need to who is signed in user, whoami
+i wish to view current user, whoami
+i wish to view present user, whoami
+i wish to view logged in user, whoami
+i wish to view working user, whoami
+i wish to view signed in user, whoami
+i wish to show current user, whoami
+i wish to show present user, whoami
+i wish to show logged in user, whoami
+i wish to show working user, whoami
+i wish to show signed in user, whoami
+i wish to know current user, whoami
+i wish to know present user, whoami
+i wish to know logged in user, whoami
+i wish to know working user, whoami
+i wish to know signed in user, whoami
+i wish to lookup current user, whoami
+i wish to lookup present user, whoami
+i wish to lookup logged in user, whoami
+i wish to lookup working user, whoami
+i wish to lookup signed in user, whoami
+i wish to display current user, whoami
+i wish to display present user, whoami
+i wish to display logged in user, whoami
+i wish to display working user, whoami
+i wish to display signed in user, whoami
+i wish to print current user, whoami
+i wish to print present user, whoami
+i wish to print logged in user, whoami
+i wish to print working user, whoami
+i wish to print signed in user, whoami
+i wish to what is the current user, whoami
+i wish to what is the present user, whoami
+i wish to what is the logged in user, whoami
+i wish to what is the working user, whoami
+i wish to what is the signed in user, whoami
+i wish to who is current user, whoami
+i wish to who is present user, whoami
+i wish to who is logged in user, whoami
+i wish to who is working user, whoami
+i wish to who is signed in user, whoami
+i demand to view current user, whoami
+i demand to view present user, whoami
+i demand to view logged in user, whoami
+i demand to view working user, whoami
+i demand to view signed in user, whoami
+i demand to show current user, whoami
+i demand to show present user, whoami
+i demand to show logged in user, whoami
+i demand to show working user, whoami
+i demand to show signed in user, whoami
+i demand to know current user, whoami
+i demand to know present user, whoami
+i demand to know logged in user, whoami
+i demand to know working user, whoami
+i demand to know signed in user, whoami
+i demand to lookup current user, whoami
+i demand to lookup present user, whoami
+i demand to lookup logged in user, whoami
+i demand to lookup working user, whoami
+i demand to lookup signed in user, whoami
+i demand to display current user, whoami
+i demand to display present user, whoami
+i demand to display logged in user, whoami
+i demand to display working user, whoami
+i demand to display signed in user, whoami
+i demand to print current user, whoami
+i demand to print present user, whoami
+i demand to print logged in user, whoami
+i demand to print working user, whoami
+i demand to print signed in user, whoami
+i demand to what is the current user, whoami
+i demand to what is the present user, whoami
+i demand to what is the logged in user, whoami
+i demand to what is the working user, whoami
+i demand to what is the signed in user, whoami
+i demand to who is current user, whoami
+i demand to who is present user, whoami
+i demand to who is logged in user, whoami
+i demand to who is working user, whoami
+i demand to who is signed in user, whoami
+i long to view current user, whoami
+i long to view present user, whoami
+i long to view logged in user, whoami
+i long to view working user, whoami
+i long to view signed in user, whoami
+i long to show current user, whoami
+i long to show present user, whoami
+i long to show logged in user, whoami
+i long to show working user, whoami
+i long to show signed in user, whoami
+i long to know current user, whoami
+i long to know present user, whoami
+i long to know logged in user, whoami
+i long to know working user, whoami
+i long to know signed in user, whoami
+i long to lookup current user, whoami
+i long to lookup present user, whoami
+i long to lookup logged in user, whoami
+i long to lookup working user, whoami
+i long to lookup signed in user, whoami
+i long to display current user, whoami
+i long to display present user, whoami
+i long to display logged in user, whoami
+i long to display working user, whoami
+i long to display signed in user, whoami
+i long to print current user, whoami
+i long to print present user, whoami
+i long to print logged in user, whoami
+i long to print working user, whoami
+i long to print signed in user, whoami
+i long to what is the current user, whoami
+i long to what is the present user, whoami
+i long to what is the logged in user, whoami
+i long to what is the working user, whoami
+i long to what is the signed in user, whoami
+i long to who is current user, whoami
+i long to who is present user, whoami
+i long to who is logged in user, whoami
+i long to who is working user, whoami
+i long to who is signed in user, whoami
+kill process, pkill
+kill a process, pkill
+kill program, pkill
+kill program called, pkill
+destroy process, pkill
+destroy a process, pkill
+destroy program, pkill
+destroy program called, pkill
+banish process, pkill
+banish a process, pkill
+banish program, pkill
+banish program called, pkill
+stop process, pkill
+stop a process, pkill
+stop program, pkill
+stop program called, pkill
+end process, pkill
+end a process, pkill
+end program, pkill
+end program called, pkill
+i want to kill process, pkill
+i want to kill a process, pkill
+i want to kill program, pkill
+i want to kill program called, pkill
+i want to destroy process, pkill
+i want to destroy a process, pkill
+i want to destroy program, pkill
+i want to destroy program called, pkill
+i want to banish process, pkill
+i want to banish a process, pkill
+i want to banish program, pkill
+i want to banish program called, pkill
+i want to stop process, pkill
+i want to stop a process, pkill
+i want to stop program, pkill
+i want to stop program called, pkill
+i want to end process, pkill
+i want to end a process, pkill
+i want to end program, pkill
+i want to end program called, pkill
+i need to kill process, pkill
+i need to kill a process, pkill
+i need to kill program, pkill
+i need to kill program called, pkill
+i need to destroy process, pkill
+i need to destroy a process, pkill
+i need to destroy program, pkill
+i need to destroy program called, pkill
+i need to banish process, pkill
+i need to banish a process, pkill
+i need to banish program, pkill
+i need to banish program called, pkill
+i need to stop process, pkill
+i need to stop a process, pkill
+i need to stop program, pkill
+i need to stop program called, pkill
+i need to end process, pkill
+i need to end a process, pkill
+i need to end program, pkill
+i need to end program called, pkill
+i wish to kill process, pkill
+i wish to kill a process, pkill
+i wish to kill program, pkill
+i wish to kill program called, pkill
+i wish to destroy process, pkill
+i wish to destroy a process, pkill
+i wish to destroy program, pkill
+i wish to destroy program called, pkill
+i wish to banish process, pkill
+i wish to banish a process, pkill
+i wish to banish program, pkill
+i wish to banish program called, pkill
+i wish to stop process, pkill
+i wish to stop a process, pkill
+i wish to stop program, pkill
+i wish to stop program called, pkill
+i wish to end process, pkill
+i wish to end a process, pkill
+i wish to end program, pkill
+i wish to end program called, pkill
+i demand to kill process, pkill
+i demand to kill a process, pkill
+i demand to kill program, pkill
+i demand to kill program called, pkill
+i demand to destroy process, pkill
+i demand to destroy a process, pkill
+i demand to destroy program, pkill
+i demand to destroy program called, pkill
+i demand to banish process, pkill
+i demand to banish a process, pkill
+i demand to banish program, pkill
+i demand to banish program called, pkill
+i demand to stop process, pkill
+i demand to stop a process, pkill
+i demand to stop program, pkill
+i demand to stop program called, pkill
+i demand to end process, pkill
+i demand to end a process, pkill
+i demand to end program, pkill
+i demand to end program called, pkill
+i long to kill process, pkill
+i long to kill a process, pkill
+i long to kill program, pkill
+i long to kill program called, pkill
+i long to destroy process, pkill
+i long to destroy a process, pkill
+i long to destroy program, pkill
+i long to destroy program called, pkill
+i long to banish process, pkill
+i long to banish a process, pkill
+i long to banish program, pkill
+i long to banish program called, pkill
+i long to stop process, pkill
+i long to stop a process, pkill
+i long to stop program, pkill
+i long to stop program called, pkill
+i long to end process, pkill
+i long to end a process, pkill
+i long to end program, pkill
+i long to end program called, pkill
