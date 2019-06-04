@@ -8,12 +8,15 @@ console.log('Application Started ...');
 
 let osUserName = os.userInfo().username;
 
+
 function checkTrackingFiles() {
 
     let trackingData = {
         years: 0,
         allMonths: []
     };
+
+    console.log('4');
 
     fs.readdir(`/home/${osUserName}/Tracking`, (e, year) => {
 
@@ -27,14 +30,108 @@ function checkTrackingFiles() {
                 if (e) throw e;
 
                 trackingData.allMonths.push(month.sort(function(a, b){return b - a}))
+
+                if (trackingData.years.length === trackingData.allMonths.length) {
+                    showMsgs(trackingData);
+                }
             });
         });
     });
-
-    return console.log(trackingData);
 }
 
+function showMsgs(trackingFilesData) {
 
+    console.log('1');
+
+    console.log(trackingFilesData);
+    console.log(trackingFilesData.years);
+
+    console.log('2');
+    for (let i = 0; i < trackingFilesData.years.length; i++) {
+
+        console.log('3');
+
+
+        for (let j = 0; j < trackingFilesData.allMonths[i].length ; j++) {
+            trackingFilesData.allMonths[i].forEach((month) => {
+                fs.readFile(`/home/${osUserName}/Tracking/${trackingFilesData.years[i]}/${month}/log.csv`, (e, data) => {
+                    let prepData;
+
+
+                    console.log('Hey Iam fs.readFile Function ...');
+                    if (e) throw e;
+
+                    prepData = data.toString().split("\n");
+
+                    // loop on each line in the data to represent it
+                    for (let i = 0; i < prepData.length; i++) {
+                        let lineData, DOMStrings, detailedData, msgHTML, newMsgHTML;
+
+                        DOMStrings = {
+                            msgHistory: '#msg_history'
+                        };
+
+                        console.log(`I'm line ${i}`);
+                        console.log(`\n`);
+
+                        lineData = prepData[i].split(',');
+                        console.log(lineData);
+
+                        detailedData = {
+                            incMsg: lineData[0],
+                            repMsg: lineData[1],
+                            command: lineData[2],
+                            msgDate: lineData[4],
+                            msgTime: lineData[5]
+                        };
+
+                        // Create HTML string with placeholder text
+                        msgHTML = '<ul>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t<!User Query>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t<li>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t<img src="dist/img/face.jpg" alt="avatar">\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t<div class="content">\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t<div class="message">\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class="bubble">\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>%reply%</p>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t<span>%date% | %time%</span>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t</div>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t</li>\n' +
+                            '\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t<!User Query>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t<li>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t<div class="content">\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t<div class="message">\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class="bubble">\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<p>%reply%</p>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t\t<span>%date% | %time%</span>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t\t</div>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t\t</li>\n' +
+                            '\t\t\t\t\t\t\t\t\t\t</ul>';
+
+                        // Replace the placeholder text with some actual data
+
+                        newMsgHTML = msgHTML.replace('%reply%', detailedData.repMsg);
+                        newMsgHTML = newMsgHTML.replace('%income%', detailedData.incMsg);
+                        newMsgHTML = newMsgHTML.replace('%time%', detailedData.msgTime);
+                        newMsgHTML = newMsgHTML.replace('%date%', detailedData.msgDate);
+
+                        console.log(`newMsgHTML: ${newMsgHTML}`);
+
+                        document.querySelector(DOMStrings.msgHistory).insertAdjacentHTML('afterbegin', newMsgHTML);
+                    }
+                });
+
+            });
+        }
+    }
+}
+
+checkTrackingFiles();
 
 // function getUsage() {
 //     var xhttp = new XMLHttpRequest();
