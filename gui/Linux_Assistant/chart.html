@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from grayshift.io/themes/swipe/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 May 2019 16:26:44 GMT -->
+<head>
+		<meta charset="utf-8">
+		<title>Linux Assistant</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="#">
+		<!-- Bootstrap core CSS -->
+		<link href="dist/css/lib/bootstrap.min.css" type="text/css" rel="stylesheet">
+		<link href="dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+		<link href="dist/css/fontawesome.min.css" type="text/css" rel="stylesheet">
+		<link href="dist/css/all.css" type="text/css" rel="stylesheet">
+		<link href="dist/css/style.css" type="text/css" rel="stylesheet">
+
+		<!-- Swipe core CSS -->
+		<link href="dist/css/swipe.min.css" type="text/css" rel="stylesheet">
+		<!-- Favicon -->
+		<link href="dist/img/favicon.png" type="image/png" rel="icon">
+		<meta charset="utf-8" />
+ 		<!-- import plugin script -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+	</head>
+	<body>
+
+		<!-- Layout -->
+		<div class="layout">
+			<!-- Start of Navigation -->
+			<nav class="navigation">
+				<div class="container">
+						<a href="#" class="logo" rel="home"><img src="dist/img/favicon.png">
+					<ul class="nav" role="tablist">
+							
+						 <li><a href="chat_window.html"   ><i   class="icon  fas fa-robot"></i></a></li>
+						 <li><a href="ahmed.html"   ><i class="icon activate fas fa-chart-pie"></i></a></li>
+						 <li><a href="#conversations"   ><i class="icon fas fa-cogs"></i></a></li>
+						 <li><a href="#conversations"   ><i class="icon fas fa-door-open"></i></a></li>
+						 
+
+					</ul>
+				</div>
+			</nav>
+			<!-- End of Navigation -->
+			<!-- Start of Sidebar -->
+		 
+			<!-- End of Sidebar -->
+			<!-- Start of Chat -->
+			<div class="chat">
+				<div class="tab-content">
+					<!-- Start of Chat Room -->
+					<div class="tab-pane fade show active" id="chat1" role="tabpanel">
+						<div class="item">
+							<div class="content">
+								<div class="container">
+									<div class="top">
+										<div class="headline">
+											<img src="dist/img/face.jpg" alt="avatar">
+											<div class="content">
+												<h5>Quincy Hensen</h5>
+												<span>Away</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="middle" id="scroll">
+									<div class="container">
+							<!-- line chart canvas element -->
+										<canvas id="buyers" width="600" height="400"></canvas>
+										<!-- pie chart canvas element -->
+										<canvas id="countries" width="600" height="400"></canvas>
+										<!-- bar chart canvas element -->
+										<canvas id="income" width="600" height="400"></canvas>
+										
+										
+									</div>
+								</div>
+								 
+							</div>
+						 
+						</div>
+					</div>
+				 
+				</div>
+			</div>
+		 
+		</div>
+		<!-- Layout -->
+		<script src="dist/js/vendor/jquery-slim.min.js"></script>
+		<script src="dist/js/vendor/popper.min.js"></script>
+		<script src="dist/js/vendor/feather.min.js"></script>
+		<script src="dist/js/vendor/eva.min.js"></script>
+		<script src="dist/js/vendor/bootstrap.min.js"></script>
+		<script src="dist/js/swipe.min.js"></script>
+		<script>
+				// line chart data
+				var buyerData = {
+					labels : ["January","February","March","April","May","June"],
+					datasets : [
+					{
+						fillColor : "rgba(172,194,132,0.4)",
+						strokeColor : "#ACC26D",
+						pointColor : "#fff",
+						pointStrokeColor : "#9DB86D",
+						data : [203,156,99,251,305,247]
+					}
+				]
+				}
+				// get line chart canvas
+				var buyers = document.getElementById('buyers').getContext('2d');
+				// draw line chart
+				new Chart(buyers).Line(buyerData);
+				// pie chart data
+				var pieData = [
+					{
+						value: 20,
+						color:"#878BB6"
+					},
+					{
+						value : 40,
+						color : "#4ACAB4"
+					},
+					{
+						value : 10,
+						color : "#FF8153"
+					},
+					{
+						value : 30,
+						color : "#FFEA88"
+					}
+				];
+				// pie chart options
+				var pieOptions = {
+						segmentShowStroke : false,
+						animateScale : true
+				}
+				// get pie chart canvas
+				var countries= document.getElementById("countries").getContext("2d");
+				// draw pie chart
+				new Chart(countries).Pie(pieData, pieOptions);
+				// bar chart data
+				var barData = {
+					labels : ["Chrome","Kate","Nautilus","Firefox","Zoom","Terminal","Electron"],
+					datasets : [
+						{
+							fillColor : "#48A497",
+							strokeColor : "#48A4D1",
+							data : [30,5,20,25,15,5,6]
+						}
+						/*{
+							fillColor : "rgba(73,188,170,0.4)",
+							strokeColor : "rgba(72,174,209,0.4)",
+							data : [364,504,605,400,345,320]
+						}*/
+					]
+				}
+				// get bar chart canvas
+				var income = document.getElementById("income").getContext("2d");
+				// draw bar chart
+				new Chart(income).Bar(barData);
+			</script>
+	</body>
+
+<!-- Mirrored from grayshift.io/themes/swipe/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 May 2019 16:27:12 GMT -->
+</html>																																																										

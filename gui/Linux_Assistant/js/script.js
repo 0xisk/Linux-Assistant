@@ -1,67 +1,41 @@
-const {ipcRenderer} = require('electron')
+const {ipcRenderer} = require('electron');
 const http = require('http');
 const fs = require('fs');
 const os = require('os');
+const {exec} = require('child_process');
 
 console.log('Application Started ...');
 
-function showMsgHistroy() {
+let osUserName = os.userInfo().username;
 
-    let osUserName = os.userInfo().username;
+function checkTrackingFiles() {
 
-    fs.readFile(`/home/${osUserName}/Tracking/2019/05/log.csv`, (e, data) => {
-        console.log('Hey Iam fs Function ...');
+    let trackingData = {
+        years: 0,
+        allMonths: []
+    };
+
+    fs.readdir(`/home/${osUserName}/Tracking`, (e, year) => {
+
         if (e) throw e;
-        let prepData = data.toString().split("\n");
 
-        for (let i = 0; i < prepData.length; i++) {
-            let lineData, DOMStrings, detailedData, msgHTML, newMsgHTML;
+        trackingData.years = year.sort(function(a, b){return b - a});
 
-            DOMStrings = {
-                msgHistory: '.msg_history'
-            };
+        trackingData.years.forEach((eachYear) => {
+            fs.readdir(`/home/${osUserName}/Tracking/${eachYear}`, (e, month) => {
 
-            console.log(`I'm line ${i}`);
-            console.log(`\n`);
+                if (e) throw e;
 
-            lineData = prepData[i].split(',');
-            console.log(lineData)
-
-            detailedData = {
-                incMsg: lineData[0],
-                repMsg: lineData[1],
-                command: lineData[2],
-                msgDate: lineData[4],
-                msgTime: lineData[5]
-            };
-
-            // Create HTML string with placeholder text
-
-            msgHTML = '<div class="outgoing_msg">\n' +
-                '\t\t\t\t  <div class="sent_msg">\n' +
-                '\t\t\t\t\t<p>%income%</p>\n' +
-                '\t\t\t\t\t<span class="time_date"> %time%    |    %date%</span> </div>\n' +
-                '\t\t\t\t</div>' +
-                '<div class="incoming_msg">\n' +
-                '\t\t\t\t <div class="incoming_msg_img"> <img src="linux.png" alt="sunil"> </div>\n' +
-                '\t\t\t\t  <div class="received_msg">\n' +
-                '\t\t\t\t\t<div class="received_withd_msg">\n' +
-                '\t\t\t\t\t  <p>%reply%</p>\n' +
-                '\t\t\t\t\t  <span class="time_date"> %time%    |    %date%</span></div>\n' +
-                '\t\t\t\t  </div>\n' +
-                '\t\t\t\t</div>'
-
-            // Replace the placeholder text with some actual data
-
-            newMsgHTML = msgHTML.replace('%reply%', detailedData.repMsg);
-            newMsgHTML = newMsgHTML.replace('%income%', detailedData.incMsg);
-            newMsgHTML = newMsgHTML.replace('%time%', detailedData.msgTime);
-            newMsgHTML = newMsgHTML.replace('%date%', detailedData.msgDate);
-
-            document.querySelector(DOMStrings.msgHistory).insertAdjacentHTML('afterend', newMsgHTML);
-        }
+                trackingData.allMonths.push(month.sort(function(a, b){return b - a}))
+            });
+        });
     });
+
+    return console.log(trackingData);
 }
+
+
+
 // function getUsage() {
 //     var xhttp = new XMLHttpRequest();
 //     function toTwoArrays(j) {
