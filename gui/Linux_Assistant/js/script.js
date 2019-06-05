@@ -193,20 +193,22 @@ function scrollButtom(eid) {
 function sendQuery() {
     var q = document.getElementById("input").value; 
     if(q.replace(" ","") == "") return;
-    appendReply(q)
+    // appendReply(q)
 
     var xhttp = new XMLHttpRequest();
-    
+
     try {
         xhttp.open("POST", "http://localhost:9000/text", false);
-        xhttp.send(q);
-        appendSend(xhttp.responseText)
-        scrollButtom("msg_history")
+        xhttp.send(q)
+        console.log(xhttp.responseText)
+        // appendSend(xhttp.responseText)
+        // scrollButtom("scroll")
 
     }
     catch(err) {
-        appendSend("Sorry an error has been occured")
-        scrollButtom("msg_history")
+        console.log(err)
+        // appendSend("Sorry an error has been occured")
+        // scrollButtom("scroll")
     }
     
 }
@@ -229,6 +231,32 @@ function appendReply(msg) {
 
 //----------------------------------------------------------------------------
 
+function voiceQuery() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            try {
+                var json = JSON.parse(xhttp.responseText);
+                if(json["query"] != "") { appendReply(json["query"]) }
+                // appendSend(json["response"])
+                // scrollButtom("msg_history")
+                console.log(json["response"])
+            }
+            catch {
+                // appendSend("Sorry an error has been occured " + err)
+                // scrollButtom("msg_history")
+            }
+        }
+    }
+    try {
+        xhttp.open("GET", "http://localhost:9000/voice", true);
+        xhttp.send();
+    }
+    catch(err) {}
+}
+
+//----------------------------------------------------------------------------
+
 // appendReply("jesus christ is here")
 // appendSend("jesus christ is here");
 
@@ -242,41 +270,39 @@ function appendReply(msg) {
 //     sendQuery(input)
 // })
 
-let f = true;
 
-function getTrackingData() {
+// function getTrackingData() {
 
-     var xhttp = new XMLHttpRequest();
-     let values     = [];
-     let dataKeys   = [];
-     xhttp.onreadystatechange = function() {
-         if (this.readyState == 4 && this.status == 200) {
-            let data = JSON.parse(xhttp.responseText)
-            let keys = Object.keys(data);
+//      var xhttp = new XMLHttpRequest();
+//      let values     = [];
+//      let dataKeys   = [];
+//      xhttp.onreadystatechange = function() {
+//          if (this.readyState == 4 && this.status == 200) {
+//             let data = JSON.parse(xhttp.responseText)
+//             let keys = Object.keys(data);
             
-            for(var i = 0;i < keys.length;i++) {
-                dataKeys.push(keys[i])
-            }
+//             for(var i = 0;i < keys.length;i++) {
+//                 dataKeys.push(keys[i])
+//             }
             
-            for(var j = 0;j < dataKeys.length;j++) {
-                values.push(data[dataKeys[j]])
-            }
-         }
-         f = false;
-     };    
-     try {
-         xhttp.open("GET", "http://localhost:9000/usage", true);
-         xhttp.send();
-         return [dataKeys , values]
-     }
-     catch(err) {
-         console.log(err)
-     }
-}
+//             for(var j = 0;j < dataKeys.length;j++) {
+//                 values.push(data[dataKeys[j]])
+//             }
+//          }
+//          f = false;
+//      };    
+//      try {
+//          xhttp.open("GET", "http://localhost:9000/usage", true);
+//          xhttp.send();
+//          return [dataKeys , values]
+//      }
+//      catch(err) {
+//          console.log(err)
+//      }
+// }
 
-setTimeout(null, 3000);
-console.log(getTrackingData())
 
+//--------------------------------------------------------------------------
 
 function createBrowserWindow() {
     const remote = require('electron').remote;
@@ -288,3 +314,4 @@ function createBrowserWindow() {
     win.loadFile('chart/samples/vue/bar/bar-with-custom-data-labels.html')
     getUsage()
 }
+

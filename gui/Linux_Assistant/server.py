@@ -7,8 +7,10 @@ from dill import load as loading;
 from sys import path;
 from os.path import join , sep , isfile;
 
+
 path.append("modules/monitoring")
 
+from modules.speech.speech import speak , listen;
 from analysis import *;
 from files import *;
 
@@ -16,9 +18,12 @@ def PATH() : return join(ROOTPATH , FOLDERNAME , Time.getYear() , Time.getMonth(
 rootFolder();
 subContent();
 
-ml = load("modules/models/model")
-cv = load("modules/models/convertion")
-cr = loading(open("modules/models/solving.bin","rb"));
+# classes = ['amixer -D pulse sset Master 50%+', 'amixer -D pulse sset Master 50%-', 'mkdir', 'mkdir -m 777', 'poweroff', 'reboot', 'systemctl suspend', 'eject', 'rm', 'rm -r' , "uname -a" , "uptime -p" , "hostname -i" , "date" , "cal" , "cal -y" , "whoami" , "pkill"]
+classes=['amixer -D pulse sset Master 50%+', 'amixer -D pulse sset Master 50%-', 'cal', 'cal -y', 'date', 'hostname -i', 'mkdir','mkdir -m 777', 'pkill', 'poweroff', 'reboot', 'systemctl suspend','uname -a', 'uptime -p', 'whoami', 'eject', 'rm', 'rm -r','uptime -p']
+
+ml = load("modules/models/model") #model
+cv = load("modules/models/feature") #convertion
+cr = loading(open("modules/models/correction.bin","rb")); #solving.bin
 fl = open(PATH() ,"a");
 
 app = Flask(__name__);
@@ -44,7 +49,6 @@ def logData(query , reply , cmd) :
 
 
 def predict(query) :
-	classes = ['amixer -D pulse sset Master 50%+', 'amixer -D pulse sset Master 50%-', 'mkdir', 'mkdir -m 777', 'poweroff', 'reboot', 'systemctl suspend', 'eject', 'rm', 'rm -r']	
 	(query , quotedwords) = correct.normalizeQuery(query , 0.55 , cr);
 	query = [" ".join(query)];
 	t_data  = cv.transform(query).toarray()
@@ -61,11 +65,39 @@ def text() :
 	if query.replace(" ","") == "" : return "error has been detected";
 	p = predict(query);
 	try :
-		run(p);
+		# run(p);
 		logData(query , "jesus christ" , p);
-	except : return "error has been detected"
+		speak("action done!");
+	except :
+		speak("error has been detected"); 
+		return "error has been detected"
 	else :
 		return p;
+
+
+@app.route("/voice" , methods=["GET"])
+def voice() :
+	query = listen();
+	if query == "" :
+		speak("i can not hear you clearly, please speak again!"); 
+		return jsonify({
+			"query"    : "",
+			"response" : "i can not hear you clearly, please speak again!"});
+	p = predict(query);
+	try :
+		run(p);
+		logData(query , "jesus christ" , p);
+		speak("action done!")
+	except :
+		return jsonify({
+			"query"    : query,
+			"response" : "error has been detected"
+		});
+	else :
+		return jsonify({
+			"query"    : query,
+			"response" : p
+		});
 
 
 @app.route('/shutdown', methods=["GET"])
@@ -85,6 +117,9 @@ def getUsage() :
 @app.route("/test" , methods=["GET"])
 def test() :
 	return "jesus christ"
+
+
+
 
 
 
