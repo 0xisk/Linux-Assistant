@@ -32,7 +32,7 @@ class Collect :
 			if isfile(path) :
 				d = db(path)
 				collected = d.append(d.get() , collected)
-		return str(collected)
+		return collected
 				
 
 	@staticmethod

@@ -131,7 +131,7 @@ function showMsgs(trackingFilesData) {
     }
 }
 
-checkTrackingFiles();
+// checkTrackingFiles();
 
 // function getUsage() {
 //     var xhttp = new XMLHttpRequest();
@@ -241,6 +241,41 @@ function appendReply(msg) {
 //     appendSend(input)
 //     sendQuery(input)
 // })
+
+let f = true;
+
+function getTrackingData() {
+
+     var xhttp = new XMLHttpRequest();
+     let values     = [];
+     let dataKeys   = [];
+     xhttp.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 200) {
+            let data = JSON.parse(xhttp.responseText)
+            let keys = Object.keys(data);
+            
+            for(var i = 0;i < keys.length;i++) {
+                dataKeys.push(keys[i])
+            }
+            
+            for(var j = 0;j < dataKeys.length;j++) {
+                values.push(data[dataKeys[j]])
+            }
+         }
+         f = false;
+     };    
+     try {
+         xhttp.open("GET", "http://localhost:9000/usage", true);
+         xhttp.send();
+         return [dataKeys , values]
+     }
+     catch(err) {
+         console.log(err)
+     }
+}
+
+setTimeout(null, 3000);
+console.log(getTrackingData())
 
 
 function createBrowserWindow() {

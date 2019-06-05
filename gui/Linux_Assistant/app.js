@@ -11,6 +11,7 @@ PythonShell.run('server.py', null, function(err , results){
 		
 	}
 });
+ 
 
 
 let appMenu = [ { label : "menue 1" },{ label : "menue 2" } ]

@@ -79,7 +79,7 @@ def shutdown():
 
 @app.route('/usage', methods=["GET"])
 def getUsage() :
-	return Collect().calculate();
+	return jsonify(Collect().calculate());
 
 
 @app.route("/test" , methods=["GET"])
