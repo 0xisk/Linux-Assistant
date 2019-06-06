@@ -165,7 +165,7 @@ function scrollButtom(eid) {
 
 //-----------------------------------------------------------------------------
 
-// function s/endQuery() {
+// function sendQuery() {
 //     var q = document.getElementById("input").value; 
 //     if(q.replace(" ","") == "") return;
 //     appendReply(q)
@@ -193,76 +193,42 @@ function scrollButtom(eid) {
 function sendQuery() {
     var q = document.getElementById("input").value; 
     if(q.replace(" ","") == "") return;
-    appendReply(q)
+    // appendReply(q)
 
     var xhttp = new XMLHttpRequest();
 
     try {
         xhttp.open("POST", "http://localhost:9000/text", false);
         xhttp.send(q)
-        appendSend(xhttp.responseText)
-        scrollButtom("discussion")
+        console.log(xhttp.responseText)
+        // appendSend(xhttp.responseText)
+        // scrollButtom("scroll")
 
     }
     catch(err) {
-        console.log(err)
-        appendSend("Sorry an error has been occured")
-        scrollButtom("discussion")
+        // console.log(err)
+        // appendSend("Sorry an error has been occured")
+        // scrollButtom("scroll")
     }
     
 }
 
 //----------------------------------------------------------------------------
 
-// function appendSend(msg) {
-//     var query = '<div class="incoming_msg"><div class="incoming_msg_img"><img src="linux.png" alt="sunil"> </div><div class="received_msg"><div class="received_withd_msg"><p>' + msg + '</p><span class="time_date"></span></div></div></div>';
-//     document.getElementById("msg_history").innerHTML += query;
-// }
-
-// function appendSend(msg) {
-//     var query = '<li>'+
-//     '<img  src="dist/img/face.jpg" alt="avatar">'+
-//     '<div class="content">'+
-//         '<div class="message">'+
-//             '<div class="bubble">'+
-//                 '<p>'+ msg +'</p>'+
-//             '</div>'+
-//         '</div>'+
-//     '</div>'+
-// '</li>';
-//     document.getElementById("msg_parent").innerHTML += query;
-// }
-
 function appendSend(msg) {
-    var query =  '<div class="bubble sender first">'  + msg + '</div>';
-    document.getElementById("discussion").innerHTML += query;
+    var query = '<div class="incoming_msg"><div class="incoming_msg_img"><img src="linux.png" alt="sunil"> </div><div class="received_msg"><div class="received_withd_msg"><p>' + msg + '</p><span class="time_date"></span></div></div></div>';
+    document.getElementById("msg_history").innerHTML += query;
 }
+
 //----------------------------------------------------------------------------
 
-// function appendReply(msg) {
-//     var query = '<div class="outgoing_msg">'+
-//                 '<div class="sent_msg"><p>' + msg + '</p><span class="time_date"></span></div></div>';
-//     document.getElementById("msg_history").innerHTML += query;
-
-// }
-
-// function appendReply(msg) {
-//     var query = '<li>'+
-//     '<div class="content">'+
-//         '<div class="message">'+
-//             '<div class="bubble">'+
-//                '<p>'+ msg +'</p>'+
-//             '</div>'+
-//         '</div>'+
-//     '</div>'+
-// '</li>';
-//     document.getElementById("msg_parent").innerHTML += query;
-// }
-
 function appendReply(msg) {
-    var query = '<div class="bubble recipient">'+msg+'</div>';
-    document.getElementById("discussion").innerHTML += query;
+    var query = '<div class="outgoing_msg">'+
+                '<div class="sent_msg"><p>' + msg + '</p><span class="time_date"></span></div></div>';
+    document.getElementById("msg_history").innerHTML += query;
+
 }
+
 //----------------------------------------------------------------------------
 
 function voiceQuery() {
@@ -272,12 +238,14 @@ function voiceQuery() {
             try {
                 var json = JSON.parse(xhttp.responseText);
                 if(json["query"] != "") { appendReply(json["query"]) }
-                appendSend(json["response"])
-                scrollButtom("discussion")
+                // appendSend(json["response"])
+                // scrollButtom("msg_history")
+                console.log(json["response"])
             }
-            catch {
-                appendSend("Sorry an error has been occured " + err)
-                scrollButtom("discussion")
+            catch(err){
+                // appendSend("Sorry an error has been occured " + err)
+                // scrollButtom("msg_history")
+                console.log(err)
             }
         }
     }
@@ -285,7 +253,9 @@ function voiceQuery() {
         xhttp.open("GET", "http://localhost:9000/voice", true);
         xhttp.send();
     }
-    catch(err) {}
+    catch(err) {
+        console.log(err)
+    }
 }
 
 //----------------------------------------------------------------------------
@@ -300,7 +270,7 @@ function voiceQuery() {
 //     ipcRenderer.send('add', input)
 //     ipcRenderer.on('added',(e,data) => document.getElementById("response").innerHTML = data) 
 //     appendSend(input)
-//     s/endQuery(input)
+//     sendQuery(input)
 // })
 
 
