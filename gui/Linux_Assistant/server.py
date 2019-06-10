@@ -65,7 +65,7 @@ def text() :
 	if query.replace(" ","") == "" : return "error has been detected";
 	p = predict(query);
 	try :
-		# run(p);
+		run(p);
 		logData(query , "jesus christ" , p);
 		speak("action done!");
 	except :
