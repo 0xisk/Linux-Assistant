@@ -142,78 +142,39 @@ function scrollButtom(eid) {
 
 //-----------------------------------------------------------------------------
 
-<<<<<<< HEAD
  
-=======
-// function s/endQuery() {
-//     var q = document.getElementById("input").value; 
-//     if(q.replace(" ","") == "") return;
-//     appendReply(q)
-
-//     var xhttp = new XMLHttpRequest();
-//     xhttp.onreadystatechange = function() {
-//         if (this.readyState == 4 && this.status == 200) {
-//             appendSend(xhttp.responseText)
-//             scrollButtom("msg_history")
-//         }
-//     };    
-//     try {
-//         xhttp.open("POST", "http://localhost:9000/text", true);
-//         xhttp.send(q);
-//     }
-//     catch(err) {
-//         appendSend("Sorry an error has been occured")
-//         scrollButtom("msg_history")
-//     }
-	
-// }
->>>>>>> c55ca72e548dc81fbf8f5abc6f3e27b39668aaf8
 
 //----------------------------------------------------------------------------
+//Kirolllos
 
 function buildMyMsg()
 {
     var q = document.getElementById("input").value; 
     if(q.replace(" ","") == "") return;
-<<<<<<< HEAD
-    
     appendReply(q)
-    // document.getElementById("input").value ="";
+    document.getElementById("input").value ="";
 }
 function sendQuery() {
     buildMyMsg()
-=======
-    appendReply(q)
-
->>>>>>> c55ca72e548dc81fbf8f5abc6f3e27b39668aaf8
     var xhttp = new XMLHttpRequest();
 
     try {
         xhttp.open("POST", "http://localhost:9000/text", false);
         xhttp.send(q)
         appendSend(xhttp.responseText)
-<<<<<<< HEAD
         // scrollButtom("scroll")
-=======
-        scrollButtom("discussion")
->>>>>>> c55ca72e548dc81fbf8f5abc6f3e27b39668aaf8
 
     }
     catch(err) {
         console.log(err)
         appendSend("Sorry an error has been occured")
-<<<<<<< HEAD
         scrollButtom("scroll")
-=======
-        scrollButtom("discussion")
->>>>>>> c55ca72e548dc81fbf8f5abc6f3e27b39668aaf8
     }
     
 }
 
 //----------------------------------------------------------------------------
 
-<<<<<<< HEAD
  
 
 function appendSend(msg) {
@@ -251,55 +212,6 @@ function appendReply(msg) {
                     '</div>'+
                 '</div>'; 
             
-=======
-// function appendSend(msg) {
-//     var query = '<div class="incoming_msg"><div class="incoming_msg_img"><img src="linux.png" alt="sunil"> </div><div class="received_msg"><div class="received_withd_msg"><p>' + msg + '</p><span class="time_date"></span></div></div></div>';
-//     document.getElementById("msg_history").innerHTML += query;
-// }
-
-// function appendSend(msg) {
-//     var query = '<li>'+
-//     '<img  src="dist/img/face.jpg" alt="avatar">'+
-//     '<div class="content">'+
-//         '<div class="message">'+
-//             '<div class="bubble">'+
-//                 '<p>'+ msg +'</p>'+
-//             '</div>'+
-//         '</div>'+
-//     '</div>'+
-// '</li>';
-//     document.getElementById("msg_parent").innerHTML += query;
-// }
-
-function appendSend(msg) {
-    var query =  '<div class="bubble sender first">'  + msg + '</div>';
-    document.getElementById("discussion").innerHTML += query;
-}
-//----------------------------------------------------------------------------
-
-// function appendReply(msg) {
-//     var query = '<div class="outgoing_msg">'+
-//                 '<div class="sent_msg"><p>' + msg + '</p><span class="time_date"></span></div></div>';
-//     document.getElementById("msg_history").innerHTML += query;
-
-// }
-
-// function appendReply(msg) {
-//     var query = '<li>'+
-//     '<div class="content">'+
-//         '<div class="message">'+
-//             '<div class="bubble">'+
-//                '<p>'+ msg +'</p>'+
-//             '</div>'+
-//         '</div>'+
-//     '</div>'+
-// '</li>';
-//     document.getElementById("msg_parent").innerHTML += query;
-// }
-
-function appendReply(msg) {
-    var query = '<div class="bubble recipient">'+msg+'</div>';
->>>>>>> c55ca72e548dc81fbf8f5abc6f3e27b39668aaf8
     document.getElementById("discussion").innerHTML += query;
 }
 //----------------------------------------------------------------------------
@@ -311,17 +223,12 @@ function voiceQuery() {
             try {
                 var json = JSON.parse(xhttp.responseText);
                 if(json["query"] != "") { appendReply(json["query"]) }
-<<<<<<< HEAD
                
                 console.log(json["response"])
-=======
-                appendSend(json["response"])
-                scrollButtom("discussion")
->>>>>>> c55ca72e548dc81fbf8f5abc6f3e27b39668aaf8
             }
             catch {
-                appendSend("Sorry an error has been occured " + err)
-                scrollButtom("discussion")
+                // appendSend("Sorry an error has been occured " + err)
+                // scrollButtom("msg_history")
             }
         }
     }
@@ -331,56 +238,7 @@ function voiceQuery() {
     }
     catch(err) {}
 }
-<<<<<<< HEAD
  
-=======
-
-//----------------------------------------------------------------------------
-
-// appendReply("jesus christ is here")
-// appendSend("jesus christ is here");
-
-
-// $('#send').click(function(){
-//     var input = document.getElementById("input").value; 
-//     if(input.replace(" ","") == "") return;
-//     ipcRenderer.send('add', input)
-//     ipcRenderer.on('added',(e,data) => document.getElementById("response").innerHTML = data) 
-//     appendSend(input)
-//     s/endQuery(input)
-// })
-
-
-// function getTrackingData() {
-
-//      var xhttp = new XMLHttpRequest();
-//      let values     = [];
-//      let dataKeys   = [];
-//      xhttp.onreadystatechange = function() {
-//          if (this.readyState == 4 && this.status == 200) {
-//             let data = JSON.parse(xhttp.responseText)
-//             let keys = Object.keys(data);
-            
-//             for(var i = 0;i < keys.length;i++) {
-//                 dataKeys.push(keys[i])
-//             }
-            
-//             for(var j = 0;j < dataKeys.length;j++) {
-//                 values.push(data[dataKeys[j]])
-//             }
-//          }
-//          f = false;
-//      };    
-//      try {
-//          xhttp.open("GET", "http://localhost:9000/usage", true);
-//          xhttp.send();
-//          return [dataKeys , values]
-//      }
-//      catch(err) {
-//          console.log(err)
-//      }
-// }
->>>>>>> c55ca72e548dc81fbf8f5abc6f3e27b39668aaf8
 
 
 //--------------------------------------------------------------------------
