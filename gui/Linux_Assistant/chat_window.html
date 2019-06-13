@@ -19,6 +19,7 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/file-explore.js"></script> -->
 	<link rel="stylesheet" href="dist/themes/default/style.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- Swipe core CSS -->
 	<link href="dist/css/swipe.min.css" type="text/css" rel="stylesheet">
@@ -35,11 +36,12 @@
 			<div class="container">
 				<a href="#" class="logo" rel="home"><img src="dist/img/favicon.png">
 					<ul class="nav" role="tablist">
-
-						<li><a href="#conversations"><i class="icon activate fas fa-robot"></i></a></li>
-						<li><a href="chart.html"><i class="icon fas fa-chart-pie"></i></a></li>
-						<li><a href="#conversations"><i class="icon fas fa-cogs"></i></a></li>
-						<li><a href="#conversations"><i class="icon fas fa-door-open"></i></a></li>
+						<li data-toggle="tooltip" data-placement="top" title="Chating"><a  href="#conversations"><i class="icon activate fas fa-robot"></i></a></li>
+						<li data-toggle="tooltip" data-placement="top" title="Chating"><a href="chart.html"><i class="icon fas fa-chart-pie"></i></a></li>
+						<li data-toggle="tooltip" data-placement="top" title="Chating"><a href="#conversations"><i class="icon fas fa-cogs"></i></a></li>
+						<li data-toggle="tooltip" data-placement="top" title="Chating"><a href="#conversations"><i class="icon fas fa-cogs"></i></a></li>
+						<li data-toggle="tooltip" data-placement="top" title="Chating"><a href="#conversations"><i class="icon fas fa-cogs"></i></a></li>
+						<li data-toggle="tooltip" data-placement="top" title="Chating"><a href="#conversations"><i class="icon fas fa-door-open"></i></a></li>
 					</ul>
 				</a>
 			</div>
@@ -58,7 +60,7 @@
 							<div class="container">
 								<div class="top">
 									<div class="headline">
-										<img src="dist/img/face.jpg" alt="avatar">
+										<img data-toggle="tooltip" data-placement="top" title="Hi Sir !" src="dist/img/face.jpg" alt="avatar">
 										<div class="content">
 											<h5>Quincy Hensen</h5>
 											<span>Active</span>
@@ -66,25 +68,10 @@
 									</div>
 								</div>
 							</div>
-					 
+							 
 
 							 
-									<div style="height: 550px;overflow: auto" id="discussion">
-									
-									
-											<!-- <div class="msg right-msg">
-												<div class="msg-img"style="background-image: url(dist/img/avatar.png)"></div>
-												<div class="msg-bubble">
-												<div class="msg-info" style="color: black">
-													<div class="msg-info-name">Me</div>
-												</div>
-												<div class="msg-text" style="color: black">
-													You can change your name in JS section!
-												</div>
-												</div>
-											</div> -->
-									
-									
+									<div style="max-height: 500px;min-height: 300px;overflow: auto" id="discussion">
 										<div class="msg left-msg">
 											<div class="msg-img"style="background-image: url(dist/img/face.jpg)"></div>
 											<div class="msg-bubble">
@@ -97,12 +84,9 @@
 											</div>
 											</div>
 										</div>
-								
-										
-
 								</div>
 							  
-								<div class="msger-inputarea">
+								<div style="position: absolute;bottom: 3%;width: 75%;" class="msger-inputarea">
 								  <input id="input" type="text" class="msger-input" placeholder="Enter your message...">
 								  <button onclick="sendQuery()" class="msger-send-btn"><i class="fa fa-paper-plane"></i></button>
 								  <button onclick="sendQuery()" class="msger-send-btn"><i class="fa fa-microphone"></i></button>
@@ -138,8 +122,16 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="dist/jstree.min.js"></script>
-
-			<!-- <script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		
+	<script type="text/javascript">
+		$(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+	</script>
+	<!-- <script>
 				$('#html').jstree();
 				$('#data').jstree({
 				'core' : {
