@@ -6,10 +6,11 @@ let mainWin ;
 const {PythonShell} = require("python-shell");
 
 //run server starter at each start 
-PythonShell.run('server.py', null, function(err , results){
-	if(err) {
+PythonShell.run('/lib/server.py', null, function(err , results){
+    if(err) {
 		
 	}
+    return console.log(`Server Connected Successfully`)
 });
  
 

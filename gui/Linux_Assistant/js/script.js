@@ -153,15 +153,21 @@ function buildMyMsg()
     if(q.replace(" ","") == "") return;
     appendReply(q)
     document.getElementById("input").value ="";
+
+    return q;
 }
+
 function sendQuery() {
-    buildMyMsg()
+    let q = buildMyMsg();
     var xhttp = new XMLHttpRequest();
 
     try {
         xhttp.open("POST", "http://localhost:9000/text", false);
         xhttp.send(q)
-        appendSend(xhttp.responseText)
+
+        let reply = xhttp.responseText
+        console.log(reply.valueOf())
+        appendSend(reply)
         // scrollButtom("scroll")
 
     }
@@ -196,6 +202,16 @@ function appendSend(msg) {
     messageBody.scrollTop = messageBody.scrollHeight - messageBody.clientHeight;
 }
 //----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
  
 
